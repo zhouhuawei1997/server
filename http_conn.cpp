@@ -12,7 +12,9 @@ const char* error_500_title = "Internal Error";
 const char* error_500_form = "There was an unusual problem serving the requested file.\n";
 
 // 网站的根目录
-const char* doc_root = "/home/ubuntu/webserver/resources";
+const char* doc_root = "/home/zhou/webserver/resources";
+
+
 
 int setnonblocking( int fd ) {
     int old_option = fcntl( fd, F_GETFL );
@@ -25,14 +27,14 @@ int setnonblocking( int fd ) {
 void addfd( int epollfd, int fd, bool one_shot ) {
     epoll_event event;
     event.data.fd = fd;
-    event.events = EPOLLIN | EPOLLRDHUP;
+    event.events = EPOLLIN | EPOLLRDHUP;  // EPOLLRDHUP 事件，代表对端断开连接
     if(one_shot) 
     {
         // 防止同一个通信被不同的线程处理
         event.events |= EPOLLONESHOT;
     }
     epoll_ctl(epollfd, EPOLL_CTL_ADD, fd, &event);
-    // 设置文件描述符非阻塞
+    // 设置文件描述符非阻塞 在读取不到数据或是写入缓冲区已满会马上return，而不会阻塞等待，在读取不到数据时会回传-1，并且设置errno为EAGAIN
     setnonblocking(fd);  
 }
 
@@ -91,6 +93,8 @@ void http_conn::init()
     m_checked_idx = 0;
     m_read_idx = 0;
     m_write_idx = 0;
+    bytes_to_send = 0;  //v1.1 需要发送文件字节数初始化
+    bytes_have_send = 0;  //v1.1 已经发送文件字节数初始化
     bzero(m_read_buf, READ_BUFFER_SIZE);
     bzero(m_write_buf, READ_BUFFER_SIZE);
     bzero(m_real_file, FILENAME_LEN);
@@ -107,7 +111,7 @@ bool http_conn::read() {
         bytes_read = recv(m_sockfd, m_read_buf + m_read_idx, 
         READ_BUFFER_SIZE - m_read_idx, 0 );
         if (bytes_read == -1) {
-            if( errno == EAGAIN || errno == EWOULDBLOCK ) {
+            if( errno == EAGAIN || errno == EWOULDBLOCK ) {  //这两个一般是一样的
                 // 没有数据
                 break;
             }
@@ -201,7 +205,7 @@ http_conn::HTTP_CODE http_conn::parse_headers(char* text) {
     } else if ( strncasecmp( text, "Connection:", 11 ) == 0 ) {
         // 处理Connection 头部字段  Connection: keep-alive
         text += 11;
-        text += strspn( text, " \t" );
+        text += strspn( text, " \t" );  //size_t strspn(const char *str1, const char *str2) 检索字符串 str1 中第一个不在字符串 str2 中出现的字符下标
         if ( strcasecmp( text, "keep-alive" ) == 0 ) {
             m_linger = true;
         }
@@ -209,7 +213,7 @@ http_conn::HTTP_CODE http_conn::parse_headers(char* text) {
         // 处理Content-Length头部字段
         text += 15;
         text += strspn( text, " \t" );
-        m_content_length = atol(text);
+        m_content_length = atol(text);  //字符串转换成长整型数
     } else if ( strncasecmp( text, "Host:", 5 ) == 0 ) {
         // 处理Host头部字段
         text += 5;
@@ -236,8 +240,8 @@ http_conn::HTTP_CODE http_conn::process_read() {
     LINE_STATUS line_status = LINE_OK;
     HTTP_CODE ret = NO_REQUEST;
     char* text = 0;
-    while (((m_check_state == CHECK_STATE_CONTENT) && (line_status == LINE_OK))
-                || ((line_status = parse_line()) == LINE_OK)) {
+    while (((m_check_state == CHECK_STATE_CONTENT) && (line_status == LINE_OK))  
+                || ((line_status = parse_line()) == LINE_OK)) {  //后者是说还有行（\r\n为标识）没读
         // 获取一行数据
         text = get_line();
         m_start_line = m_checked_idx;
@@ -261,11 +265,11 @@ http_conn::HTTP_CODE http_conn::process_read() {
                 break;
             }
             case CHECK_STATE_CONTENT: {
-                ret = parse_content( text );
-                if ( ret == GET_REQUEST ) {
+                ret = parse_content( text );  //ret可能为NO_REQUEST（代表根据content-length判断，还没读完），也可能为GET_REQUEST
+                if ( ret == GET_REQUEST ) {  
                     return do_request();
                 }
-                line_status = LINE_OPEN;
+                line_status = LINE_OPEN;  //ret为NO_REQUEST
                 break;
             }
             default: {
@@ -281,17 +285,17 @@ http_conn::HTTP_CODE http_conn::process_read() {
 // 映射到内存地址m_file_address处，并告诉调用者获取文件成功
 http_conn::HTTP_CODE http_conn::do_request()
 {
-    // "/home/ubuntu/webserver/resources"
+    // doc_root = "/home/zhou/webserver/resources"
     strcpy( m_real_file, doc_root );
-    int len = strlen( doc_root );
-    strncpy( m_real_file + len, m_url, FILENAME_LEN - len - 1 );
+    int len = strlen( doc_root ); 
+    strncpy( m_real_file + len, m_url, FILENAME_LEN - len - 1 );  //char *strncpy(char *dest, const char *src, int n)，表示把src所指向的字符串中以src地址开始的前n个字节复制到dest所指的数组中，并返回被复制后的dest
     // 获取m_real_file文件的相关的状态信息，-1失败，0成功
-    if ( stat( m_real_file, &m_file_stat ) < 0 ) {
+    if ( stat( m_real_file, &m_file_stat ) < 0 ) {  //通过文件名filename获取文件信息，并保存在buf所指的结构体stat中.执行成功则返回0，失败返回-1，错误代码存于errno
         return NO_RESOURCE;
     }
 
     // 判断访问权限
-    if ( ! ( m_file_stat.st_mode & S_IROTH ) ) {
+    if ( ! ( m_file_stat.st_mode & S_IROTH ) ) {  //S_IROTH所有人可读
         return FORBIDDEN_REQUEST;
     }
 
@@ -304,7 +308,7 @@ http_conn::HTTP_CODE http_conn::do_request()
     int fd = open( m_real_file, O_RDONLY );
     // 创建内存映射
     m_file_address = ( char* )mmap( 0, m_file_stat.st_size, PROT_READ, MAP_PRIVATE, fd, 0 );
-    close( fd );
+    close(fd);
     return FILE_REQUEST;
 }
 
@@ -321,9 +325,13 @@ void http_conn::unmap() {
 bool http_conn::write()
 {
     int temp = 0;
+
+    /* v1.0删除
     int bytes_have_send = 0;    // 已经发送的字节
     int bytes_to_send = m_write_idx;// 将要发送的字节 （m_write_idx）写缓冲区中待发送的字节数
-    
+    */
+
+
     if ( bytes_to_send == 0 ) {
         // 将要发送的字节为0，这一次响应结束。
         modfd( m_epollfd, m_sockfd, EPOLLIN ); 
@@ -332,8 +340,8 @@ bool http_conn::write()
     }
 
     while(1) {
-        // 分散写
-        temp = writev(m_sockfd, m_iv, m_iv_count);
+        // 分散写（从不连续的内存写出去数据）
+        temp = writev(m_sockfd, m_iv, m_iv_count);  //返回写字节数
         if ( temp <= -1 ) {
             // 如果TCP写缓冲没有空间，则等待下一轮EPOLLOUT事件，虽然在此期间，
             // 服务器无法立即接收到同一客户的下一个请求，但可以保证连接的完整性。
@@ -344,8 +352,13 @@ bool http_conn::write()
             unmap();
             return false;
         }
-        bytes_to_send -= temp;
+        //读了temp字节数的文件
         bytes_have_send += temp;
+        //已发送temp字节数的文件
+        bytes_to_send -= temp;
+        
+
+        /* v1.0 错误代码
         if ( bytes_to_send <= bytes_have_send ) {
             // 发送HTTP响应成功，根据HTTP请求中的Connection字段决定是否立即关闭连接
             unmap();
@@ -358,6 +371,45 @@ bool http_conn::write()
                 return false;
             } 
         }
+        */
+
+        // v1.1修改
+        if (bytes_have_send >= m_iv[0].iov_len) //判断响应头是否发送完毕，如果可以发送的字节大于报头，证明报头发送完毕
+        // bytes_have_send = bytes_have_send + temp;  m_iv[0].iov_len = m_iv[0].iov_len + bytes_have_send;
+        //判断条件等价于temp(这一次写入的) >= m_iv[0].iov_len（报头还没写完的），所以这一次写完就说明报头发送完毕
+        {
+            //头已经发送完毕
+            m_iv[0].iov_len = 0;
+            /*因为m_write_idx表示为待发送文件的定位点，m_iv[0]指向m_write_buf，
+            所以bytes_have_send（已发送的数据量） - m_write_idx（已发送完的报头中的数据量）
+            就等于剩余发送文件映射区的起始位置*/
+            m_iv[1].iov_base = m_file_address + (bytes_have_send - m_write_idx);
+            m_iv[1].iov_len = bytes_to_send;
+        }
+        else
+        {
+            //如果没有发送完毕，还要修改下次写数据的位置
+            m_iv[0].iov_base = m_write_buf + bytes_have_send;  //头还没发送的起始位置
+            m_iv[0].iov_len = m_iv[0].iov_len - bytes_have_send;  //头还没发送的长度
+        }
+
+        if (bytes_to_send <= 0)
+        {
+            // 没有数据要发送了
+            unmap();
+            modfd(m_epollfd, m_sockfd, EPOLLIN);
+
+            if (m_linger)
+            {
+                init();
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
     }
 }
 
@@ -366,7 +418,7 @@ bool http_conn::add_response( const char* format, ... ) {
     if( m_write_idx >= WRITE_BUFFER_SIZE ) {
         return false;
     }
-    va_list arg_list;
+    va_list arg_list;  //解析参数的
     va_start( arg_list, format );
     int len = vsnprintf( m_write_buf + m_write_idx, WRITE_BUFFER_SIZE - 1 - m_write_idx, format, arg_list );
     if( len >= ( WRITE_BUFFER_SIZE - 1 - m_write_idx ) ) {
@@ -451,6 +503,7 @@ bool http_conn::process_write(HTTP_CODE ret) {
             m_iv[ 1 ].iov_base = m_file_address;
             m_iv[ 1 ].iov_len = m_file_stat.st_size;
             m_iv_count = 2;
+            bytes_to_send = m_write_idx + m_file_stat.st_size;  //v1.1 响应头的大小+文件的大小，也就是总的要发送的数据,或者说还需要传给socket的数组字节数
             return true;
         default:
             return false;
@@ -458,6 +511,8 @@ bool http_conn::process_write(HTTP_CODE ret) {
 
     m_iv[ 0 ].iov_base = m_write_buf;
     m_iv[ 0 ].iov_len = m_write_idx;
+    //v1.1 如果是其他行为，待发送的字节数则就位写缓冲区的数据
+    bytes_to_send = m_write_idx;
     m_iv_count = 1;
     return true;
 }

@@ -18,10 +18,12 @@ HTTP默认端口是80 把程序绑定的端口号设置为80就可以不输入�
 iptables -t nat -A PREROUTING -p tcp --dport 80 -j REDIRECT --to-port 10001
 实现需求效果。
 
+
 2.为什么要捕捉SIGPIPE信号？
 
 对一个对端已经关闭的socket调用两次write，第二次将会生成SIGPIPE信号，该信号默认结束进程。因此，需要捕捉该信号，忽略它（SIG_IGN）。
 
 3.threadpool.h line45:if(pthread_create(m_threads + i, NULL, worker, this) != 0)为什么要求worker一定是静态函数？
+
 worker必须是静态函数C++的类成员函数都有一个默认参数 this 指针，而线程调用的时候，限制了只能有一个参数 void* arg，如果不设置成静态在调用的时候会出现this 和arg都给worker 导致错误。
 

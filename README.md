@@ -5,4 +5,4 @@
 
 ## BUG发现
   在云端搭完服务器后，我很开心地发到好友群里让大家访问欣赏，并且还写了个为这个群定制的网页，如下图：
-  https://ftp.bmp.ovh/imgs/2021/07/a2f3aa6eb35f1767.jpg
+![Image text](https://ftp.bmp.ovh/imgs/2021/07/a2f3aa6eb35f1767.jpg)

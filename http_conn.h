@@ -28,7 +28,7 @@ public:
     static const int READ_BUFFER_SIZE = 2048;   // 读缓冲区的大小
     static const int WRITE_BUFFER_SIZE = 1024;  // 写缓冲区的大小
     
-    // HTTP请求方法，这里只支持GET
+    // HTTP请求方法
     enum METHOD {GET = 0, POST, HEAD, PUT, DELETE, TRACE, OPTIONS, CONNECT};
     
     /*
@@ -60,7 +60,7 @@ public:
     ~http_conn(){}
 public:
     void init(int sockfd, const sockaddr_in& addr); // 初始化新接受的连接
-    void close_conn();  // 关闭连接
+    void close_conn(bool real_close = true);  // 关闭连接
     void process(); // 处理客户端请求
     bool read();// 非阻塞读
     bool write();// 非阻塞写
@@ -91,6 +91,8 @@ private:
 public:
     static int m_epollfd;       // 所有socket上的事件都被注册到同一个epoll内核事件中，所以设置成静态的
     static int m_user_count;    // 统计用户的数量
+    static int word_count;  //v3.0 留言数量
+    static locker board_lock; //v3.0 boardview.html互斥锁
 
 private:
     int m_sockfd;           // 该HTTP连接的socket和对方的socket地址
@@ -115,8 +117,15 @@ private:
     int m_write_idx;                        // 写缓冲区中待发送的字节数
     char* m_file_address;                   // 客户请求的目标文件被mmap到内存中的起始位置
     struct stat m_file_stat;                // 目标文件的状态。通过它我们可以判断文件是否存在、是否为目录、是否可读，并获取文件大小等信息
-    struct iovec m_iv[2];                   // 我们将采用writev来执行写操作，所以定义下面两个成员，其中m_iv_count表示被写内存块的数量。
+    struct iovec m_iv[2];                   // 我们将采用writev来执行写操作，所以定义下面两个成员，其中m_iv_count表示被写内存块的数量。struct iovec定义了一个向量元素。通常，这个结构用作一个多元素的数组。对于每一个传输的元素，指针成员iov_base指向一个缓冲区，这个缓冲区是存放的是readv所接收的数据或是writev将要发送的数据。成员iov_len在各种情况下分别确定了接收的最大长度以及实际写入的长度。
     int m_iv_count;
+
+    int bytes_to_send;  //v1.1 将要发送的数据的字节数
+    int bytes_have_send;  //v1.1 已经发送的字节数
+
+    int post_index;        //v3.0 是否启用的POST
+    char *m_string; //v3.0 存储请求体数据
+    
 };
 
 #endif

@@ -64,6 +64,10 @@ public:
     void process(); // 处理客户端请求
     bool read();// 非阻塞读
     bool write();// 非阻塞写
+    sockaddr_in *get_address()  //获取用户信息
+    {
+        return &m_address;
+    }
 private:
     void init();    // 初始化连接
     HTTP_CODE process_read();    // 解析HTTP请求

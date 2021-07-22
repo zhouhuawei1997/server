@@ -9,6 +9,7 @@
 #include <time.h>
 #include <iostream>
 #include "locker.h"
+#include "log.h"
 using namespace std;
 
 
@@ -40,6 +41,7 @@ void addfd( int epollfd, int fd, bool one_shot ) {
     epoll_event event;
     event.data.fd = fd;
     event.events = EPOLLIN | EPOLLRDHUP ;  // EPOLLRDHUP 事件，代表对端断开连接
+    //event.events = EPOLLIN | EPOLLRDHUP | EPOLLET;  //ET模式
     if(one_shot) 
     {
         // 防止同一个通信被不同的线程处理
@@ -61,7 +63,8 @@ void removefd( int epollfd, int fd ) {
 void modfd(int epollfd, int fd, int ev) {
     epoll_event event;
     event.data.fd = fd;
-    event.events = ev | EPOLLONESHOT | EPOLLRDHUP;
+    event.events = ev | EPOLLONESHOT | EPOLLRDHUP ;
+    //event.events = ev | EPOLLONESHOT | EPOLLRDHUP | EPOLLET;  //ET模式
     epoll_ctl( epollfd, EPOLL_CTL_MOD, fd, &event );
 }
 
@@ -180,6 +183,9 @@ void writeboard(char* content){
     vector<string> nameWord = decode(str);
     string name = nameWord[0];
     string word = nameWord[1];
+    const char* cname = name.c_str();
+    const char* cword = word.c_str();
+    LOG_INFO("POST succeed! name: %s, word: %s", cname, cword);  //v4.0
     time_t timep;
     time (&timep);
     string str_time = asctime(gmtime(&timep));
@@ -324,7 +330,8 @@ http_conn::HTTP_CODE http_conn::parse_headers(char* text) {
         text += strspn( text, " \t" );
         m_host = text;
     } else {
-        //printf( "oop! unknow header %s\n", text );
+        //LOG_INFO("oop!unknow header: %s", text);
+        Log::get_instance()->flush();
     }
     return NO_REQUEST;
 }
@@ -539,6 +546,8 @@ bool http_conn::add_response( const char* format, ... ) {
     }
     m_write_idx += len;
     va_end( arg_list );
+    LOG_INFO("request:%s", m_write_buf);
+    Log::get_instance()->flush();
     return true;
 }
 

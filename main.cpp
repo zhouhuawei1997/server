@@ -15,6 +15,7 @@
 #include<unistd.h>
 #include"lst_timer.h"
 #include <assert.h>
+#include "log.h"
 
 #define MAX_FD 65535 //最大文件描述符个数
 #define MAX_EVENT_NUMBER 10000  //一次监听的最大事件数量
@@ -80,6 +81,8 @@ void cb_func(client_data* user_data)
     close(user_data->sockfd);
     http_conn::m_user_count--;
     printf("close fd [%d] by time cb_func \n",user_data->sockfd);
+    LOG_INFO("close fd [%d] by time cb_func", user_data->sockfd);
+    Log::get_instance()->flush();
 }
 //设置非阻塞IO
 int setnonblocking_main(int fd)
@@ -92,7 +95,7 @@ int setnonblocking_main(int fd)
 
 
 int main(int argc, char* argv[]){
-    
+    Log::get_instance()->init("ServerLog", 2000, 800000, 0); //v4.0 同步日志模型 最后一个参数维0代表同步
     if(argc <= 1){
         printf("按照如下格式运行：%s port_number\n", basename(argv[0]));
         exit(-1);
@@ -112,6 +115,7 @@ int main(int argc, char* argv[]){
 
     //创建一个数组用于保存所有的客户端信息
     http_conn* users = new http_conn[MAX_FD];
+    assert(users);
 
     //创建监听套接字
     int listenfd = socket(PF_INET, SOCK_STREAM, 0);  //AF = Address Family PF = Protocol Family 其实没区别 设计的时候想多了
@@ -133,12 +137,12 @@ int main(int argc, char* argv[]){
     //监听
 
     ret = listen(listenfd, 5);  //当有多个客户端程序和服务端相连时,表示可以接受的排队长度，超过则connect refuse
-    assert(ret >= -1);
+    assert(ret >= 0);
 
     //创建epoll对象，事件数组，添加
     epoll_event events[MAX_EVENT_NUMBER];
     int epollfd = epoll_create(5);  //参数非0即可
-    assert(epollfd != -1);
+    assert(epollfd != 0);
 
     //将监听文件描述符添加到epoll对象中
     addfd(epollfd, listenfd, false);
@@ -152,8 +156,8 @@ int main(int argc, char* argv[]){
     addfd(epollfd, pipefd[0], false);
 
     //设置信号处理函数
-    addsig(SIGALRM, sig_handler);
-    addsig(SIGTERM, sig_handler);
+    addsig(SIGALRM, sig_handler, false);
+    addsig(SIGTERM, sig_handler, false);
     bool stop_server = false;
 
     client_data* users_timer = new client_data[MAX_FD];  //存用户信息
@@ -161,10 +165,11 @@ int main(int argc, char* argv[]){
     alarm(TIMESLOT);  //TIMESLOT秒后发出SIGALRM信号
 
 
-    while(!stop_server){
+    while(!stop_server){  
         int num = epoll_wait(epollfd, events, MAX_EVENT_NUMBER, -1);  //第四个参数为timeout 0不阻塞 -1阻塞
         if(num < 0 && (errno != EINTR)){
             printf("epoll failure\n");
+            LOG_ERROR("%s", "epoll failure");  //v4.0
             break;
         }
 
@@ -175,30 +180,70 @@ int main(int argc, char* argv[]){
                 //有客户端连接进来
                 struct sockaddr_in client_address;  //含ip和端口号
                 socklen_t client_addrlen = sizeof(client_address);
-                printf("waiting listen accept!\n");
-                int connfd = accept(listenfd, (struct  sockaddr*)&client_address, &client_addrlen);  //为这个链接分配的fd
-                printf("accept! connfd:[%d]\n",connfd);
-                if(http_conn::m_user_count >= MAX_FD){
-                    //目前连接数满了,给客户端写一个信息
-                    show_error(connfd,"Internet server busy");
+//v4.0 bug定位
+//listen ET  //v4.0 bug解决
+/*  
+                while(1){
+                    printf("waiting listen accept!\n");
+                    int connfd = accept(listenfd, (struct  sockaddr*)&client_address, &client_addrlen);  //为这个链接分配的fd
+                    printf("accept! connfd:[%d]\n",connfd);
+                    if (connfd < 0)
+                    {
+                        LOG_ERROR("%s:errno is:%d", "accept error", errno);  //v4.0
+                        printf("test1\n");
+                        break;
+                    }
+                    if(http_conn::m_user_count >= MAX_FD){
+                        //目前连接数满了,给客户端写一个信息
+                        show_error(connfd,"Internet server busy");
+                        printf("test2\n");
+                        LOG_ERROR("%s", "Internal server busy");  //v4.0
+                        break;
+                    }
+                    //将新的客户数据初始化，放入数组当中
+                    users[connfd].init(connfd, client_address);
+
+                    //v2.0 新客户数据交付给定时器
+                    users_timer[connfd].address = client_address;
+                    users_timer[connfd].sockfd = connfd;
+
+                    //v2.0 创建定时器，设置回调函数与超时时间，然后绑定定时器与用户数据，最后将定时器添加到链表timer_list中
+                    util_timer * timer = new util_timer;
+                    timer->user_data = &users_timer[connfd];
+                    timer->cb_func = cb_func;
+                    time_t cur = time(NULL);
+                    timer->expire = cur + 3*TIMESLOT;//超时时间为15s，15无连接则关闭链接
+                    users_timer[connfd].timer = timer;  //用户信息加入定时器
+                    timer_list.add_timer(timer);  //定时器列表加入定时器
+                }
+                continue;
+*/
+                int connfd = accept(listenfd, (struct sockaddr *)&client_address, &client_addrlen);
+                if (connfd < 0)
+                {
+                    LOG_ERROR("%s:errno is:%d", "accept error", errno);  //v4.0
                     continue;
                 }
-                //将新的客户数据初始化，放入数组当中
+                if (http_conn::m_user_count >= MAX_FD)
+                {
+                    show_error(connfd, "Internal server busy");
+                    LOG_ERROR("%s", "Internal server busy");  //v4.0
+                    continue;
+                }
                 users[connfd].init(connfd, client_address);
 
-                //v2.0 新客户数据交付给定时器
+                //初始化client_data数据
+                //创建定时器，设置回调函数和超时时间，绑定用户数据，将定时器添加到链表中
                 users_timer[connfd].address = client_address;
                 users_timer[connfd].sockfd = connfd;
-
-                //v2.0 创建定时器，设置回调函数与超时时间，然后绑定定时器与用户数据，最后将定时器添加到链表timer_list中
-                util_timer * timer = new util_timer;
+                util_timer *timer = new util_timer;
                 timer->user_data = &users_timer[connfd];
                 timer->cb_func = cb_func;
                 time_t cur = time(NULL);
-                timer->expire = cur + 3*TIMESLOT;//超时时间为15s，15无连接则关闭链接
-                users_timer[connfd].timer = timer;  //用户信息加入定时器
-                timer_list.add_timer(timer);  //定时器列表加入定时器
-
+                timer->expire = cur + 3 * TIMESLOT;
+                users_timer[connfd].timer = timer;
+                timer_list.add_timer(timer);
+                
 
             }
             else if(events[i].events & (EPOLLRDHUP | EPOLLHUP | EPOLLERR)){
@@ -207,6 +252,7 @@ int main(int argc, char* argv[]){
                 //v2.0 异常时删除定时器 断开连接
                 util_timer *timer = users_timer[sockfd].timer;
                 printf("events[i].events & (EPOLLRDHUP | EPOLLHUP | EPOLLERR) cb_func\n");
+                LOG_ERROR("%s", "events[i].events & (EPOLLRDHUP | EPOLLHUP | EPOLLERR) cb_func");  //v4.0
                 timer->cb_func(&users_timer[sockfd]);
                 if (timer)
                 {
@@ -256,7 +302,9 @@ int main(int argc, char* argv[]){
             {
                 util_timer *timer = users_timer[sockfd].timer;
                 if(users[sockfd].read())
-                {
+                {   
+                    LOG_INFO("deal with the client(%s)", inet_ntoa(users[sockfd].get_address()->sin_addr));
+                    Log::get_instance()->flush();  //v4.0
                     pool->append(users + sockfd);
 
                     //更新时间
@@ -264,6 +312,8 @@ int main(int argc, char* argv[]){
                     {
                         time_t cur = time(NULL);
                         timer->expire = cur + 3 * TIMESLOT;
+                        LOG_INFO("%s", "adjust timer because of EPOLLIN");  //v4.0
+                        Log::get_instance()->flush();
                         timer_list.adjust_timer(timer);
                     }
                 }
@@ -283,21 +333,31 @@ int main(int argc, char* argv[]){
             else if(events[i].events & EPOLLOUT)
             {
                 //创建定时器，设置其回调函数与超时时间，然后绑定定时器与用户数据，最后将定时器添加到链表timer_list中
-                
-                util_timer * timer = users_timer[sockfd].timer;
-                if(timer)
+                util_timer *timer = users_timer[sockfd].timer;
+                if (users[sockfd].write())  //写数据成功
                 {
-                    time_t cur = time(NULL);
-                    timer->expire = cur + 3 * TIMESLOT;
-                    //printf("adjust timer by write!\n");
-                    timer_list.adjust_timer(timer);
-                }
-                
+                    LOG_INFO("send data to the client(%s)", inet_ntoa(users[sockfd].get_address()->sin_addr));  //v4.0
+                    Log::get_instance()->flush();
 
-                if(!users[sockfd].write())
-                {
-                    users[sockfd].close_conn();
+                    //若有数据传输，则将定时器往后延迟3个单位,并对新的定时器在链表上的位置进行调整
+                    if (timer)
+                    {
+                        time_t cur = time(NULL);
+                        timer->expire = cur + 3 * TIMESLOT;
+                        LOG_INFO("%s", "adjust timer because of EPOLLOUT");  //v4.0
+                        Log::get_instance()->flush();
+                        timer_list.adjust_timer(timer);
+                    }
                 }
+                else
+                {
+                    timer->cb_func(&users_timer[sockfd]);  //失败了 关闭并删除定时器
+                    if (timer)
+                    {
+                        timer_list.del_timer(timer);
+                    }
+                }
+                
             }
             if(timeout)
             {

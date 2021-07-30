@@ -16,6 +16,8 @@
 #include"lst_timer.h"
 #include <assert.h>
 #include "log.h"
+#include "sql_connection_pool.h"
+
 
 #define MAX_FD 65535 //最大文件描述符个数
 #define MAX_EVENT_NUMBER 10000  //一次监听的最大事件数量
@@ -105,10 +107,18 @@ int main(int argc, char* argv[]){
     //对SIGPIE信号进行处理 https://blog.csdn.net/u010821666/article/details/81841755
     addsig(SIGPIPE, SIG_IGN);  //捕获SIGPIPE信号，忽略它
 
+    //创建数据库连接池 v5.0 
+    //printf("数据路连接池begin！\n");
+    connection_pool *connPool = connection_pool::GetInstance();  //局部静态变量懒汉模式
+    //printf("数据路连接池end！\n");
+    //printf("连接池初始化begin！\n");
+    connPool->init("127.0.0.1", "root", "123456", "mydb", 3306, 8);
+    //printf("连接池初始化end！\n");
+    
     //初始化线程池
     threadpool<http_conn>* pool = NULL;
     try{
-        pool = new threadpool<http_conn>;
+        pool = new threadpool<http_conn>(connPool);  //5.0 线程会用到连接
     }catch(...){
         exit(-1);
     }
@@ -230,7 +240,7 @@ int main(int argc, char* argv[]){
                     LOG_ERROR("%s", "Internal server busy");  //v4.0
                     continue;
                 }
-                users[connfd].init(connfd, client_address);
+                users[connfd].init(connfd, client_address, connPool);  //v5.0
 
                 //初始化client_data数据
                 //创建定时器，设置回调函数和超时时间，绑定用户数据，将定时器添加到链表中

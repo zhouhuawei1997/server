@@ -1,0 +1,1998 @@
+2021-07-29 10:46:31.621838 [info]: deal with the client(10.249.47.36)
+2021-07-29 10:46:31.621948 [info]: adjust timer because of EPOLLIN
+2021-07-29 10:46:31.622609 [info]: request:HTTP/1.1 200 OK
+
+2021-07-29 10:46:31.622638 [info]: request:HTTP/1.1 200 OK
+Content-Length: 3975
+
+2021-07-29 10:46:31.622647 [info]: request:HTTP/1.1 200 OK
+Content-Length: 3975
+Content-Type:text/html
+
+2021-07-29 10:46:31.622653 [info]: request:HTTP/1.1 200 OK
+Content-Length: 3975
+Content-Type:text/html
+Connection: keep-alive
+
+2021-07-29 10:46:31.622659 [info]: request:HTTP/1.1 200 OK
+Content-Length: 3975
+Content-Type:text/html
+Connection: keep-alive
+
+
+2021-07-29 10:46:31.622737 [info]: send data to the client(10.249.47.36)
+2021-07-29 10:46:31.622752 [info]: adjust timer because of EPOLLOUT
+2021-07-29 10:46:47.947025 [info]: close fd [18] by time cb_func
+2021-07-29 10:46:47.947109 [info]: close fd [20] by time cb_func
+2021-07-29 10:59:13.825146 [info]: deal with the client(10.249.47.36)
+2021-07-29 10:59:13.825463 [info]: adjust timer because of EPOLLIN
+2021-07-29 10:59:13.826451 [info]: request:HTTP/1.1 200 OK
+
+2021-07-29 10:59:13.826492 [info]: request:HTTP/1.1 200 OK
+Content-Length: 3975
+
+2021-07-29 10:59:13.826501 [info]: request:HTTP/1.1 200 OK
+Content-Length: 3975
+Content-Type:text/html
+
+2021-07-29 10:59:13.826508 [info]: request:HTTP/1.1 200 OK
+Content-Length: 3975
+Content-Type:text/html
+Connection: keep-alive
+
+2021-07-29 10:59:13.826514 [info]: request:HTTP/1.1 200 OK
+Content-Length: 3975
+Content-Type:text/html
+Connection: keep-alive
+
+
+2021-07-29 10:59:13.826689 [info]: send data to the client(10.249.47.36)
+2021-07-29 10:59:13.826723 [info]: adjust timer because of EPOLLOUT
+2021-07-29 10:59:28.670311 [info]: close fd [20] by time cb_func
+2021-07-29 10:59:28.670390 [info]: close fd [18] by time cb_func
+2021-07-29 11:01:57.515598 [info]: deal with the client(10.249.47.36)
+2021-07-29 11:01:57.515686 [info]: adjust timer because of EPOLLIN
+2021-07-29 11:01:57.516302 [info]: request:HTTP/1.1 200 OK
+
+2021-07-29 11:01:57.516329 [info]: request:HTTP/1.1 200 OK
+Content-Length: 3975
+
+2021-07-29 11:01:57.516337 [info]: request:HTTP/1.1 200 OK
+Content-Length: 3975
+Content-Type:text/html
+
+2021-07-29 11:01:57.516344 [info]: request:HTTP/1.1 200 OK
+Content-Length: 3975
+Content-Type:text/html
+Connection: keep-alive
+
+2021-07-29 11:01:57.516352 [info]: request:HTTP/1.1 200 OK
+Content-Length: 3975
+Content-Type:text/html
+Connection: keep-alive
+
+
+2021-07-29 11:01:57.516415 [info]: send data to the client(10.249.47.36)
+2021-07-29 11:01:57.516429 [info]: adjust timer because of EPOLLOUT
+2021-07-29 11:10:57.125211 [info]: deal with the client(10.249.47.36)
+2021-07-29 11:10:57.125333 [info]: adjust timer because of EPOLLIN
+2021-07-29 11:10:57.125940 [info]: request:HTTP/1.1 200 OK
+
+2021-07-29 11:10:57.125971 [info]: request:HTTP/1.1 200 OK
+Content-Length: 3975
+
+2021-07-29 11:10:57.125980 [info]: request:HTTP/1.1 200 OK
+Content-Length: 3975
+Content-Type:text/html
+
+2021-07-29 11:10:57.125986 [info]: request:HTTP/1.1 200 OK
+Content-Length: 3975
+Content-Type:text/html
+Connection: keep-alive
+
+2021-07-29 11:10:57.125993 [info]: request:HTTP/1.1 200 OK
+Content-Length: 3975
+Content-Type:text/html
+Connection: keep-alive
+
+
+2021-07-29 11:10:57.126076 [info]: send data to the client(10.249.47.36)
+2021-07-29 11:10:57.126091 [info]: adjust timer because of EPOLLOUT
+2021-07-29 11:11:13.366676 [info]: close fd [20] by time cb_func
+2021-07-29 11:11:13.366744 [info]: close fd [18] by time cb_func
+2021-07-29 11:17:11.950770 [info]: deal with the client(10.249.47.36)
+2021-07-29 11:17:11.950867 [info]: adjust timer because of EPOLLIN
+2021-07-29 11:17:11.951456 [info]: request:HTTP/1.1 200 OK
+
+2021-07-29 11:17:11.951482 [info]: request:HTTP/1.1 200 OK
+Content-Length: 3975
+
+2021-07-29 11:17:11.951490 [info]: request:HTTP/1.1 200 OK
+Content-Length: 3975
+Content-Type:text/html
+
+2021-07-29 11:17:11.951497 [info]: request:HTTP/1.1 200 OK
+Content-Length: 3975
+Content-Type:text/html
+Connection: keep-alive
+
+2021-07-29 11:17:11.951503 [info]: request:HTTP/1.1 200 OK
+Content-Length: 3975
+Content-Type:text/html
+Connection: keep-alive
+
+
+2021-07-29 11:17:11.951575 [info]: send data to the client(10.249.47.36)
+2021-07-29 11:17:11.951589 [info]: adjust timer because of EPOLLOUT
+2021-07-29 11:17:26.358725 [info]: close fd [20] by time cb_func
+2021-07-29 11:17:26.358892 [info]: close fd [18] by time cb_func
+2021-07-29 11:22:36.256995 [info]: deal with the client(10.249.47.36)
+2021-07-29 11:22:36.257386 [info]: adjust timer because of EPOLLIN
+2021-07-29 11:22:36.260936 [info]: request:HTTP/1.1 200 OK
+
+2021-07-29 11:22:36.260979 [info]: request:HTTP/1.1 200 OK
+Content-Length: 3975
+
+2021-07-29 11:22:36.260988 [info]: request:HTTP/1.1 200 OK
+Content-Length: 3975
+Content-Type:text/html
+
+2021-07-29 11:22:36.260996 [info]: request:HTTP/1.1 200 OK
+Content-Length: 3975
+Content-Type:text/html
+Connection: keep-alive
+
+2021-07-29 11:22:36.261003 [info]: request:HTTP/1.1 200 OK
+Content-Length: 3975
+Content-Type:text/html
+Connection: keep-alive
+
+
+2021-07-29 11:22:36.261193 [info]: send data to the client(10.249.47.36)
+2021-07-29 11:22:36.261221 [info]: adjust timer because of EPOLLOUT
+2021-07-29 11:22:51.386738 [info]: close fd [20] by time cb_func
+2021-07-29 11:22:51.386812 [info]: close fd [18] by time cb_func
+2021-07-29 11:29:56.376636 [info]: deal with the client(10.249.47.36)
+2021-07-29 11:29:56.376738 [info]: adjust timer because of EPOLLIN
+2021-07-29 11:29:56.377345 [info]: request:HTTP/1.1 200 OK
+
+2021-07-29 11:29:56.377370 [info]: request:HTTP/1.1 200 OK
+Content-Length: 3975
+
+2021-07-29 11:29:56.377378 [info]: request:HTTP/1.1 200 OK
+Content-Length: 3975
+Content-Type:text/html
+
+2021-07-29 11:29:56.377388 [info]: request:HTTP/1.1 200 OK
+Content-Length: 3975
+Content-Type:text/html
+Connection: keep-alive
+
+2021-07-29 11:29:56.377394 [info]: request:HTTP/1.1 200 OK
+Content-Length: 3975
+Content-Type:text/html
+Connection: keep-alive
+
+
+2021-07-29 11:29:56.377473 [info]: send data to the client(10.249.47.36)
+2021-07-29 11:29:56.377490 [info]: adjust timer because of EPOLLOUT
+2021-07-29 11:30:12.232521 [info]: close fd [20] by time cb_func
+2021-07-29 11:30:12.232588 [info]: close fd [18] by time cb_func
+2021-07-29 11:33:25.397109 [info]: deal with the client(10.249.47.36)
+2021-07-29 11:33:25.397191 [info]: adjust timer because of EPOLLIN
+2021-07-29 11:33:25.397824 [info]: request:HTTP/1.1 200 OK
+
+2021-07-29 11:33:25.397850 [info]: request:HTTP/1.1 200 OK
+Content-Length: 3975
+
+2021-07-29 11:33:25.397858 [info]: request:HTTP/1.1 200 OK
+Content-Length: 3975
+Content-Type:text/html
+
+2021-07-29 11:33:25.397865 [info]: request:HTTP/1.1 200 OK
+Content-Length: 3975
+Content-Type:text/html
+Connection: keep-alive
+
+2021-07-29 11:33:25.397872 [info]: request:HTTP/1.1 200 OK
+Content-Length: 3975
+Content-Type:text/html
+Connection: keep-alive
+
+
+2021-07-29 11:33:25.397933 [info]: send data to the client(10.249.47.36)
+2021-07-29 11:33:25.397945 [info]: adjust timer because of EPOLLOUT
+2021-07-29 11:33:41.556610 [info]: close fd [20] by time cb_func
+2021-07-29 11:33:41.556814 [info]: close fd [18] by time cb_func
+2021-07-29 11:45:19.151035 [info]: deal with the client(10.249.47.36)
+2021-07-29 11:45:19.151116 [info]: adjust timer because of EPOLLIN
+2021-07-29 11:45:19.151992 [info]: request:HTTP/1.1 200 OK
+
+2021-07-29 11:45:19.152037 [info]: request:HTTP/1.1 200 OK
+Content-Length: 3975
+
+2021-07-29 11:45:19.152047 [info]: request:HTTP/1.1 200 OK
+Content-Length: 3975
+Content-Type:text/html
+
+2021-07-29 11:45:19.152054 [info]: request:HTTP/1.1 200 OK
+Content-Length: 3975
+Content-Type:text/html
+Connection: keep-alive
+
+2021-07-29 11:45:19.152062 [info]: request:HTTP/1.1 200 OK
+Content-Length: 3975
+Content-Type:text/html
+Connection: keep-alive
+
+
+2021-07-29 11:45:19.152232 [info]: send data to the client(10.249.47.36)
+2021-07-29 11:45:19.152283 [info]: adjust timer because of EPOLLOUT
+2021-07-29 11:45:36.156338 [info]: close fd [20] by time cb_func
+2021-07-29 11:45:36.156410 [info]: close fd [18] by time cb_func
+2021-07-29 11:47:39.099723 [info]: deal with the client(10.249.47.36)
+2021-07-29 11:47:39.099873 [info]: adjust timer because of EPOLLIN
+2021-07-29 11:47:39.100645 [info]: request:HTTP/1.1 200 OK
+
+2021-07-29 11:47:39.100682 [info]: request:HTTP/1.1 200 OK
+Content-Length: 3975
+
+2021-07-29 11:47:39.100691 [info]: request:HTTP/1.1 200 OK
+Content-Length: 3975
+Content-Type:text/html
+
+2021-07-29 11:47:39.100698 [info]: request:HTTP/1.1 200 OK
+Content-Length: 3975
+Content-Type:text/html
+Connection: keep-alive
+
+2021-07-29 11:47:39.100705 [info]: request:HTTP/1.1 200 OK
+Content-Length: 3975
+Content-Type:text/html
+Connection: keep-alive
+
+
+2021-07-29 11:47:39.100780 [info]: send data to the client(10.249.47.36)
+2021-07-29 11:47:39.100795 [info]: adjust timer because of EPOLLOUT
+2021-07-29 11:47:55.415810 [info]: close fd [20] by time cb_func
+2021-07-29 11:47:55.416006 [info]: close fd [18] by time cb_func
+2021-07-29 11:56:33.128893 [info]: deal with the client(10.249.47.36)
+2021-07-29 11:56:33.129040 [info]: adjust timer because of EPOLLIN
+2021-07-29 11:56:33.129804 [info]: request:HTTP/1.1 200 OK
+
+2021-07-29 11:56:33.129825 [info]: request:HTTP/1.1 200 OK
+Content-Length: 3975
+
+2021-07-29 11:56:33.129833 [info]: request:HTTP/1.1 200 OK
+Content-Length: 3975
+Content-Type:text/html
+
+2021-07-29 11:56:33.129840 [info]: request:HTTP/1.1 200 OK
+Content-Length: 3975
+Content-Type:text/html
+Connection: keep-alive
+
+2021-07-29 11:56:33.129847 [info]: request:HTTP/1.1 200 OK
+Content-Length: 3975
+Content-Type:text/html
+Connection: keep-alive
+
+
+2021-07-29 11:56:33.129915 [info]: send data to the client(10.249.47.36)
+2021-07-29 11:56:33.129930 [info]: adjust timer because of EPOLLOUT
+2021-07-29 11:56:48.461123 [info]: close fd [20] by time cb_func
+2021-07-29 11:56:48.461191 [info]: close fd [18] by time cb_func
+2021-07-29 11:58:37.436039 [info]: deal with the client(10.249.47.36)
+2021-07-29 11:58:37.436120 [info]: adjust timer because of EPOLLIN
+2021-07-29 11:58:37.436818 [info]: request:HTTP/1.1 200 OK
+
+2021-07-29 11:58:37.436842 [info]: request:HTTP/1.1 200 OK
+Content-Length: 3975
+
+2021-07-29 11:58:37.436850 [info]: request:HTTP/1.1 200 OK
+Content-Length: 3975
+Content-Type:text/html
+
+2021-07-29 11:58:37.436857 [info]: request:HTTP/1.1 200 OK
+Content-Length: 3975
+Content-Type:text/html
+Connection: keep-alive
+
+2021-07-29 11:58:37.436863 [info]: request:HTTP/1.1 200 OK
+Content-Length: 3975
+Content-Type:text/html
+Connection: keep-alive
+
+
+2021-07-29 11:58:37.436934 [info]: send data to the client(10.249.47.36)
+2021-07-29 11:58:37.436949 [info]: adjust timer because of EPOLLOUT
+2021-07-29 11:58:56.657411 [info]: close fd [20] by time cb_func
+2021-07-29 11:58:56.657486 [info]: close fd [18] by time cb_func
+2021-07-29 11:59:52.139394 [info]: deal with the client(10.249.47.36)
+2021-07-29 11:59:52.139513 [info]: adjust timer because of EPOLLIN
+2021-07-29 11:59:52.140244 [info]: request:HTTP/1.1 200 OK
+
+2021-07-29 11:59:52.140271 [info]: request:HTTP/1.1 200 OK
+Content-Length: 3975
+
+2021-07-29 11:59:52.140280 [info]: request:HTTP/1.1 200 OK
+Content-Length: 3975
+Content-Type:text/html
+
+2021-07-29 11:59:52.140287 [info]: request:HTTP/1.1 200 OK
+Content-Length: 3975
+Content-Type:text/html
+Connection: keep-alive
+
+2021-07-29 11:59:52.140294 [info]: request:HTTP/1.1 200 OK
+Content-Length: 3975
+Content-Type:text/html
+Connection: keep-alive
+
+
+2021-07-29 11:59:52.140436 [info]: send data to the client(10.249.47.36)
+2021-07-29 11:59:52.140459 [info]: adjust timer because of EPOLLOUT
+2021-07-29 12:00:09.701319 [info]: close fd [20] by time cb_func
+2021-07-29 12:00:09.701391 [info]: close fd [18] by time cb_func
+2021-07-29 12:03:34.748513 [info]: deal with the client(10.249.47.36)
+2021-07-29 12:03:34.748609 [info]: adjust timer because of EPOLLIN
+2021-07-29 12:03:34.749348 [info]: request:HTTP/1.1 200 OK
+
+2021-07-29 12:03:34.749378 [info]: request:HTTP/1.1 200 OK
+Content-Length: 3975
+
+2021-07-29 12:03:34.749386 [info]: request:HTTP/1.1 200 OK
+Content-Length: 3975
+Content-Type:text/html
+
+2021-07-29 12:03:34.749393 [info]: request:HTTP/1.1 200 OK
+Content-Length: 3975
+Content-Type:text/html
+Connection: keep-alive
+
+2021-07-29 12:03:34.749472 [info]: request:HTTP/1.1 200 OK
+Content-Length: 3975
+Content-Type:text/html
+Connection: keep-alive
+
+
+2021-07-29 12:03:34.749612 [info]: send data to the client(10.249.47.36)
+2021-07-29 12:03:34.749635 [info]: adjust timer because of EPOLLOUT
+2021-07-29 12:03:52.250355 [info]: close fd [20] by time cb_func
+2021-07-29 12:03:52.250431 [info]: close fd [18] by time cb_func
+2021-07-29 12:04:56.276724 [info]: deal with the client(10.249.47.36)
+2021-07-29 12:04:56.276924 [info]: adjust timer because of EPOLLIN
+2021-07-29 12:04:56.277461 [info]: request:HTTP/1.1 200 OK
+
+2021-07-29 12:04:56.277480 [info]: request:HTTP/1.1 200 OK
+Content-Length: 3975
+
+2021-07-29 12:04:56.277488 [info]: request:HTTP/1.1 200 OK
+Content-Length: 3975
+Content-Type:text/html
+
+2021-07-29 12:04:56.277495 [info]: request:HTTP/1.1 200 OK
+Content-Length: 3975
+Content-Type:text/html
+Connection: keep-alive
+
+2021-07-29 12:04:56.277502 [info]: request:HTTP/1.1 200 OK
+Content-Length: 3975
+Content-Type:text/html
+Connection: keep-alive
+
+
+2021-07-29 12:04:56.277550 [info]: send data to the client(10.249.47.36)
+2021-07-29 12:04:56.277576 [info]: adjust timer because of EPOLLOUT
+2021-07-29 12:04:57.987049 [info]: deal with the client(10.249.47.36)
+2021-07-29 12:04:57.987246 [info]: adjust timer because of EPOLLIN
+2021-07-29 12:04:57.987807 [info]: request:HTTP/1.1 200 OK
+
+2021-07-29 12:04:57.987824 [info]: request:HTTP/1.1 200 OK
+Content-Length: 3975
+
+2021-07-29 12:04:57.987833 [info]: request:HTTP/1.1 200 OK
+Content-Length: 3975
+Content-Type:text/html
+
+2021-07-29 12:04:57.987839 [info]: request:HTTP/1.1 200 OK
+Content-Length: 3975
+Content-Type:text/html
+Connection: keep-alive
+
+2021-07-29 12:04:57.987847 [info]: request:HTTP/1.1 200 OK
+Content-Length: 3975
+Content-Type:text/html
+Connection: keep-alive
+
+
+2021-07-29 12:04:57.987898 [info]: send data to the client(10.249.47.36)
+2021-07-29 12:04:57.987911 [info]: adjust timer because of EPOLLOUT
+2021-07-29 12:05:15.967111 [info]: deal with the client(10.249.47.36)
+2021-07-29 12:05:15.967192 [info]: adjust timer because of EPOLLIN
+2021-07-29 12:05:15.968037 [info]: request:HTTP/1.1 200 OK
+
+2021-07-29 12:05:15.968072 [info]: request:HTTP/1.1 200 OK
+Content-Length: 3975
+
+2021-07-29 12:05:15.968081 [info]: request:HTTP/1.1 200 OK
+Content-Length: 3975
+Content-Type:text/html
+
+2021-07-29 12:05:15.968088 [info]: request:HTTP/1.1 200 OK
+Content-Length: 3975
+Content-Type:text/html
+Connection: keep-alive
+
+2021-07-29 12:05:15.968095 [info]: request:HTTP/1.1 200 OK
+Content-Length: 3975
+Content-Type:text/html
+Connection: keep-alive
+
+
+2021-07-29 12:05:15.968188 [info]: send data to the client(10.249.47.36)
+2021-07-29 12:05:15.968210 [info]: adjust timer because of EPOLLOUT
+2021-07-29 12:05:32.675739 [info]: close fd [20] by time cb_func
+2021-07-29 12:05:32.675815 [info]: close fd [18] by time cb_func
+2021-07-29 12:07:28.832656 [info]: deal with the client(10.249.47.36)
+2021-07-29 12:07:28.832771 [info]: adjust timer because of EPOLLIN
+2021-07-29 12:07:28.835602 [info]: request:HTTP/1.1 200 OK
+
+2021-07-29 12:07:28.835626 [info]: request:HTTP/1.1 200 OK
+Content-Length: 3975
+
+2021-07-29 12:07:28.835635 [info]: request:HTTP/1.1 200 OK
+Content-Length: 3975
+Content-Type:text/html
+
+2021-07-29 12:07:28.835642 [info]: request:HTTP/1.1 200 OK
+Content-Length: 3975
+Content-Type:text/html
+Connection: keep-alive
+
+2021-07-29 12:07:28.835649 [info]: request:HTTP/1.1 200 OK
+Content-Length: 3975
+Content-Type:text/html
+Connection: keep-alive
+
+
+2021-07-29 12:07:28.835852 [info]: send data to the client(10.249.47.36)
+2021-07-29 12:07:28.835872 [info]: adjust timer because of EPOLLOUT
+2021-07-29 12:07:45.276213 [info]: close fd [20] by time cb_func
+2021-07-29 12:07:45.276289 [info]: close fd [18] by time cb_func
+2021-07-29 12:09:50.601304 [info]: deal with the client(10.249.47.36)
+2021-07-29 12:09:50.601384 [info]: adjust timer because of EPOLLIN
+2021-07-29 12:09:50.602295 [info]: request:HTTP/1.1 200 OK
+
+2021-07-29 12:09:50.602336 [info]: request:HTTP/1.1 200 OK
+Content-Length: 3975
+
+2021-07-29 12:09:50.602345 [info]: request:HTTP/1.1 200 OK
+Content-Length: 3975
+Content-Type:text/html
+
+2021-07-29 12:09:50.602352 [info]: request:HTTP/1.1 200 OK
+Content-Length: 3975
+Content-Type:text/html
+Connection: keep-alive
+
+2021-07-29 12:09:50.602358 [info]: request:HTTP/1.1 200 OK
+Content-Length: 3975
+Content-Type:text/html
+Connection: keep-alive
+
+
+2021-07-29 12:09:50.602422 [info]: send data to the client(10.249.47.36)
+2021-07-29 12:09:50.602435 [info]: adjust timer because of EPOLLOUT
+2021-07-29 12:10:07.382058 [info]: close fd [20] by time cb_func
+2021-07-29 12:10:07.382135 [info]: close fd [18] by time cb_func
+2021-07-29 12:11:31.126250 [info]: deal with the client(10.249.47.36)
+2021-07-29 12:11:31.126374 [info]: adjust timer because of EPOLLIN
+2021-07-29 12:11:31.127279 [info]: request:HTTP/1.1 200 OK
+
+2021-07-29 12:11:31.127307 [info]: request:HTTP/1.1 200 OK
+Content-Length: 3975
+
+2021-07-29 12:11:31.127316 [info]: request:HTTP/1.1 200 OK
+Content-Length: 3975
+Content-Type:text/html
+
+2021-07-29 12:11:31.127323 [info]: request:HTTP/1.1 200 OK
+Content-Length: 3975
+Content-Type:text/html
+Connection: keep-alive
+
+2021-07-29 12:11:31.127329 [info]: request:HTTP/1.1 200 OK
+Content-Length: 3975
+Content-Type:text/html
+Connection: keep-alive
+
+
+2021-07-29 12:11:31.127464 [info]: send data to the client(10.249.47.36)
+2021-07-29 12:11:31.127487 [info]: adjust timer because of EPOLLOUT
+2021-07-29 12:11:47.746980 [info]: close fd [20] by time cb_func
+2021-07-29 12:11:47.747049 [info]: close fd [18] by time cb_func
+2021-07-29 12:16:39.793282 [info]: deal with the client(10.249.47.36)
+2021-07-29 12:16:39.793381 [info]: adjust timer because of EPOLLIN
+2021-07-29 12:16:39.794092 [info]: request:HTTP/1.1 200 OK
+
+2021-07-29 12:16:39.794108 [info]: request:HTTP/1.1 200 OK
+Content-Length: 3975
+
+2021-07-29 12:16:39.794116 [info]: request:HTTP/1.1 200 OK
+Content-Length: 3975
+Content-Type:text/html
+
+2021-07-29 12:16:39.794171 [info]: request:HTTP/1.1 200 OK
+Content-Length: 3975
+Content-Type:text/html
+Connection: keep-alive
+
+2021-07-29 12:16:39.794181 [info]: request:HTTP/1.1 200 OK
+Content-Length: 3975
+Content-Type:text/html
+Connection: keep-alive
+
+
+2021-07-29 12:16:39.794228 [info]: send data to the client(10.249.47.36)
+2021-07-29 12:16:39.794240 [info]: adjust timer because of EPOLLOUT
+2021-07-29 12:16:56.407191 [info]: close fd [20] by time cb_func
+2021-07-29 12:16:56.407260 [info]: close fd [18] by time cb_func
+2021-07-29 12:17:30.609010 [info]: deal with the client(10.249.47.36)
+2021-07-29 12:17:30.609187 [info]: adjust timer because of EPOLLIN
+2021-07-29 12:17:30.610241 [info]: request:HTTP/1.1 200 OK
+
+2021-07-29 12:17:30.610323 [info]: request:HTTP/1.1 200 OK
+Content-Length: 3975
+
+2021-07-29 12:17:30.610338 [info]: request:HTTP/1.1 200 OK
+Content-Length: 3975
+Content-Type:text/html
+
+2021-07-29 12:17:30.610345 [info]: request:HTTP/1.1 200 OK
+Content-Length: 3975
+Content-Type:text/html
+Connection: keep-alive
+
+2021-07-29 12:17:30.610353 [info]: request:HTTP/1.1 200 OK
+Content-Length: 3975
+Content-Type:text/html
+Connection: keep-alive
+
+
+2021-07-29 12:17:30.612009 [info]: send data to the client(10.249.47.36)
+2021-07-29 12:17:30.612085 [info]: adjust timer because of EPOLLOUT
+2021-07-29 12:17:49.045899 [info]: close fd [20] by time cb_func
+2021-07-29 12:17:49.046351 [info]: close fd [18] by time cb_func
+2021-07-29 12:29:58.999074 [info]: deal with the client(10.249.47.36)
+2021-07-29 12:29:58.999186 [info]: adjust timer because of EPOLLIN
+2021-07-29 12:29:59.000030 [info]: request:HTTP/1.1 200 OK
+
+2021-07-29 12:29:59.000052 [info]: request:HTTP/1.1 200 OK
+Content-Length: 499
+
+2021-07-29 12:29:59.000060 [info]: request:HTTP/1.1 200 OK
+Content-Length: 499
+Content-Type:text/html
+
+2021-07-29 12:29:59.000067 [info]: request:HTTP/1.1 200 OK
+Content-Length: 499
+Content-Type:text/html
+Connection: keep-alive
+
+2021-07-29 12:29:59.000075 [info]: request:HTTP/1.1 200 OK
+Content-Length: 499
+Content-Type:text/html
+Connection: keep-alive
+
+
+2021-07-29 12:29:59.000135 [info]: send data to the client(10.249.47.36)
+2021-07-29 12:29:59.000148 [info]: adjust timer because of EPOLLOUT
+2021-07-29 12:30:15.159794 [info]: close fd [20] by time cb_func
+2021-07-29 12:30:15.160071 [info]: close fd [18] by time cb_func
+2021-07-29 12:35:16.046970 [info]: deal with the client(10.249.47.36)
+2021-07-29 12:35:16.047225 [info]: adjust timer because of EPOLLIN
+2021-07-29 12:35:16.047860 [info]: request:HTTP/1.1 200 OK
+
+2021-07-29 12:35:16.047877 [info]: request:HTTP/1.1 200 OK
+Content-Length: 561
+
+2021-07-29 12:35:16.047885 [info]: request:HTTP/1.1 200 OK
+Content-Length: 561
+Content-Type:text/html
+
+2021-07-29 12:35:16.047945 [info]: request:HTTP/1.1 200 OK
+Content-Length: 561
+Content-Type:text/html
+Connection: keep-alive
+
+2021-07-29 12:35:16.047953 [info]: request:HTTP/1.1 200 OK
+Content-Length: 561
+Content-Type:text/html
+Connection: keep-alive
+
+
+2021-07-29 12:35:16.048004 [info]: send data to the client(10.249.47.36)
+2021-07-29 12:35:16.048017 [info]: adjust timer because of EPOLLOUT
+2021-07-29 12:35:35.187320 [info]: close fd [20] by time cb_func
+2021-07-29 12:35:35.187385 [info]: close fd [18] by time cb_func
+2021-07-29 16:03:56.699159 [info]: deal with the client(10.249.47.36)
+2021-07-29 16:03:56.699426 [info]: adjust timer because of EPOLLIN
+2021-07-29 16:03:56.700878 [info]: request:HTTP/1.1 200 OK
+
+2021-07-29 16:03:56.700901 [info]: request:HTTP/1.1 200 OK
+Content-Length: 561
+
+2021-07-29 16:03:56.700909 [info]: request:HTTP/1.1 200 OK
+Content-Length: 561
+Content-Type:text/html
+
+2021-07-29 16:03:56.700916 [info]: request:HTTP/1.1 200 OK
+Content-Length: 561
+Content-Type:text/html
+Connection: keep-alive
+
+2021-07-29 16:03:56.700923 [info]: request:HTTP/1.1 200 OK
+Content-Length: 561
+Content-Type:text/html
+Connection: keep-alive
+
+
+2021-07-29 16:03:56.700996 [info]: send data to the client(10.249.47.36)
+2021-07-29 16:03:56.701010 [info]: adjust timer because of EPOLLOUT
+2021-07-29 16:04:11.177074 [info]: close fd [18] by time cb_func
+2021-07-29 16:04:11.177146 [info]: close fd [20] by time cb_func
+2021-07-29 16:09:11.663981 [info]: deal with the client(10.249.47.36)
+2021-07-29 16:09:11.664156 [info]: request:HTTP/1.1 200 OK
+
+2021-07-29 16:09:11.664173 [info]: request:HTTP/1.1 200 OK
+Content-Length: 730
+
+2021-07-29 16:09:11.664180 [info]: request:HTTP/1.1 200 OK
+Content-Length: 730
+Content-Type:text/html
+
+2021-07-29 16:09:11.664187 [info]: request:HTTP/1.1 200 OK
+Content-Length: 730
+Content-Type:text/html
+Connection: keep-alive
+
+2021-07-29 16:09:11.664194 [info]: request:HTTP/1.1 200 OK
+Content-Length: 730
+Content-Type:text/html
+Connection: keep-alive
+
+
+2021-07-29 16:09:11.664207 [info]: adjust timer because of EPOLLIN
+2021-07-29 16:09:11.664642 [info]: send data to the client(10.249.47.36)
+2021-07-29 16:09:11.664682 [info]: adjust timer because of EPOLLOUT
+2021-07-29 16:09:26.205817 [info]: close fd [20] by time cb_func
+2021-07-29 16:09:26.205891 [info]: close fd [18] by time cb_func
+2021-07-29 16:13:34.028655 [info]: deal with the client(10.249.47.36)
+2021-07-29 16:13:34.028798 [info]: POST succeed! name: 周华伟, word: 好气啊
+2021-07-29 16:13:34.028872 [info]: request:HTTP/1.1 200 OK
+
+2021-07-29 16:13:34.028882 [info]: request:HTTP/1.1 200 OK
+Content-Length: 283
+
+2021-07-29 16:13:34.028889 [info]: request:HTTP/1.1 200 OK
+Content-Length: 283
+Content-Type:text/html
+
+2021-07-29 16:13:34.028897 [info]: request:HTTP/1.1 200 OK
+Content-Length: 283
+Content-Type:text/html
+Connection: keep-alive
+
+2021-07-29 16:13:34.028903 [info]: request:HTTP/1.1 200 OK
+Content-Length: 283
+Content-Type:text/html
+Connection: keep-alive
+
+
+2021-07-29 16:13:34.028927 [info]: adjust timer because of EPOLLIN
+2021-07-29 16:13:34.032260 [info]: send data to the client(10.249.47.36)
+2021-07-29 16:13:34.032311 [info]: adjust timer because of EPOLLOUT
+2021-07-29 16:13:51.228348 [info]: close fd [20] by time cb_func
+2021-07-29 16:13:51.228553 [info]: close fd [18] by time cb_func
+2021-07-29 16:21:39.566967 [info]: deal with the client(10.249.47.36)
+2021-07-29 16:21:39.567085 [info]: adjust timer because of EPOLLIN
+2021-07-29 16:21:39.567183 [info]: POST succeed! name: 周华伟, word: 好气啊
+2021-07-29 16:21:39.567282 [info]: request:HTTP/1.1 200 OK
+
+2021-07-29 16:21:39.567292 [info]: request:HTTP/1.1 200 OK
+Content-Length: 283
+
+2021-07-29 16:21:39.567300 [info]: request:HTTP/1.1 200 OK
+Content-Length: 283
+Content-Type:text/html
+
+2021-07-29 16:21:39.567307 [info]: request:HTTP/1.1 200 OK
+Content-Length: 283
+Content-Type:text/html
+Connection: keep-alive
+
+2021-07-29 16:21:39.567313 [info]: request:HTTP/1.1 200 OK
+Content-Length: 283
+Content-Type:text/html
+Connection: keep-alive
+
+
+2021-07-29 16:21:39.567359 [info]: send data to the client(10.249.47.36)
+2021-07-29 16:21:39.567372 [info]: adjust timer because of EPOLLOUT
+2021-07-29 16:21:55.270036 [info]: close fd [20] by time cb_func
+2021-07-29 16:21:55.270107 [info]: close fd [18] by time cb_func
+2021-07-29 16:24:03.267632 [info]: deal with the client(10.249.47.36)
+2021-07-29 16:24:03.268118 [info]: POST succeed! name: 周华伟, word: 好气啊
+2021-07-29 16:24:03.268270 [info]: request:HTTP/1.1 200 OK
+
+2021-07-29 16:24:03.268288 [info]: request:HTTP/1.1 200 OK
+Content-Length: 283
+
+2021-07-29 16:24:03.268296 [info]: request:HTTP/1.1 200 OK
+Content-Length: 283
+Content-Type:text/html
+
+2021-07-29 16:24:03.268304 [info]: request:HTTP/1.1 200 OK
+Content-Length: 283
+Content-Type:text/html
+Connection: keep-alive
+
+2021-07-29 16:24:03.268311 [info]: request:HTTP/1.1 200 OK
+Content-Length: 283
+Content-Type:text/html
+Connection: keep-alive
+
+
+2021-07-29 16:24:03.268342 [info]: adjust timer because of EPOLLIN
+2021-07-29 16:24:03.268476 [info]: send data to the client(10.249.47.36)
+2021-07-29 16:24:03.270352 [info]: adjust timer because of EPOLLOUT
+2021-07-29 16:24:13.458067 [info]: deal with the client(10.249.47.36)
+2021-07-29 16:24:13.458327 [info]: adjust timer because of EPOLLIN
+2021-07-29 16:24:13.460986 [info]: request:HTTP/1.1 200 OK
+
+2021-07-29 16:24:13.461060 [info]: request:HTTP/1.1 200 OK
+Content-Length: 561
+
+2021-07-29 16:24:13.461073 [info]: request:HTTP/1.1 200 OK
+Content-Length: 561
+Content-Type:text/html
+
+2021-07-29 16:24:13.461081 [info]: request:HTTP/1.1 200 OK
+Content-Length: 561
+Content-Type:text/html
+Connection: keep-alive
+
+2021-07-29 16:24:13.461089 [info]: request:HTTP/1.1 200 OK
+Content-Length: 561
+Content-Type:text/html
+Connection: keep-alive
+
+
+2021-07-29 16:24:13.463978 [info]: send data to the client(10.249.47.36)
+2021-07-29 16:24:13.464141 [info]: adjust timer because of EPOLLOUT
+2021-07-29 16:24:20.283117 [info]: close fd [20] by time cb_func
+2021-07-29 16:24:30.283576 [info]: close fd [18] by time cb_func
+2021-07-29 16:43:33.584339 [info]: deal with the client(10.249.47.36)
+2021-07-29 16:43:33.584443 [info]: adjust timer because of EPOLLIN
+2021-07-29 16:43:33.584527 [info]: POST succeed! name: 周华伟, word: 好气啊
+2021-07-29 16:43:33.584606 [info]: request:HTTP/1.1 200 OK
+
+2021-07-29 16:43:33.584615 [info]: request:HTTP/1.1 200 OK
+Content-Length: 283
+
+2021-07-29 16:43:33.584623 [info]: request:HTTP/1.1 200 OK
+Content-Length: 283
+Content-Type:text/html
+
+2021-07-29 16:43:33.584630 [info]: request:HTTP/1.1 200 OK
+Content-Length: 283
+Content-Type:text/html
+Connection: keep-alive
+
+2021-07-29 16:43:33.584638 [info]: request:HTTP/1.1 200 OK
+Content-Length: 283
+Content-Type:text/html
+Connection: keep-alive
+
+
+2021-07-29 16:43:33.584681 [info]: send data to the client(10.249.47.36)
+2021-07-29 16:43:33.584694 [info]: adjust timer because of EPOLLOUT
+2021-07-29 16:43:50.343400 [info]: close fd [20] by time cb_func
+2021-07-29 16:43:50.343468 [info]: close fd [18] by time cb_func
+2021-07-29 16:48:34.571231 [info]: deal with the client(10.249.47.36)
+2021-07-29 16:48:34.571361 [info]: adjust timer because of EPOLLIN
+2021-07-29 16:48:34.571460 [info]: request:HTTP/1.1 200 OK
+
+2021-07-29 16:48:34.571473 [info]: request:HTTP/1.1 200 OK
+Content-Length: 283
+
+2021-07-29 16:48:34.571480 [info]: request:HTTP/1.1 200 OK
+Content-Length: 283
+Content-Type:text/html
+
+2021-07-29 16:48:34.571495 [info]: request:HTTP/1.1 200 OK
+Content-Length: 283
+Content-Type:text/html
+Connection: keep-alive
+
+2021-07-29 16:48:34.571502 [info]: request:HTTP/1.1 200 OK
+Content-Length: 283
+Content-Type:text/html
+Connection: keep-alive
+
+
+2021-07-29 16:48:34.571547 [info]: send data to the client(10.249.47.36)
+2021-07-29 16:48:34.571561 [info]: adjust timer because of EPOLLOUT
+2021-07-29 16:48:52.509334 [info]: close fd [20] by time cb_func
+2021-07-29 16:48:52.509555 [info]: close fd [18] by time cb_func
+2021-07-29 16:49:10.413782 [info]: deal with the client(10.249.47.36)
+2021-07-29 16:49:10.413953 [info]: request:HTTP/1.1 200 OK
+
+2021-07-29 16:49:10.413969 [info]: request:HTTP/1.1 200 OK
+Content-Length: 283
+
+2021-07-29 16:49:10.413976 [info]: request:HTTP/1.1 200 OK
+Content-Length: 283
+Content-Type:text/html
+
+2021-07-29 16:49:10.413983 [info]: request:HTTP/1.1 200 OK
+Content-Length: 283
+Content-Type:text/html
+Connection: keep-alive
+
+2021-07-29 16:49:10.413990 [info]: request:HTTP/1.1 200 OK
+Content-Length: 283
+Content-Type:text/html
+Connection: keep-alive
+
+
+2021-07-29 16:49:10.414004 [info]: adjust timer because of EPOLLIN
+2021-07-29 16:49:10.414071 [info]: send data to the client(10.249.47.36)
+2021-07-29 16:49:10.414090 [info]: adjust timer because of EPOLLOUT
+2021-07-29 16:49:20.551903 [info]: deal with the client(10.249.47.36)
+2021-07-29 16:49:20.552066 [info]: request:HTTP/1.1 200 OK
+
+2021-07-29 16:49:20.552083 [info]: request:HTTP/1.1 200 OK
+Content-Length: 730
+
+2021-07-29 16:49:20.552091 [info]: request:HTTP/1.1 200 OK
+Content-Length: 730
+Content-Type:text/html
+
+2021-07-29 16:49:20.552098 [info]: request:HTTP/1.1 200 OK
+Content-Length: 730
+Content-Type:text/html
+Connection: keep-alive
+
+2021-07-29 16:49:20.552105 [info]: request:HTTP/1.1 200 OK
+Content-Length: 730
+Content-Type:text/html
+Connection: keep-alive
+
+
+2021-07-29 16:49:20.552119 [info]: adjust timer because of EPOLLIN
+2021-07-29 16:49:20.552194 [info]: send data to the client(10.249.47.36)
+2021-07-29 16:49:20.552219 [info]: adjust timer because of EPOLLOUT
+2021-07-29 16:49:24.635567 [info]: deal with the client(10.249.47.36)
+2021-07-29 16:49:24.635800 [info]: request:HTTP/1.1 200 OK
+
+2021-07-29 16:49:24.635817 [info]: request:HTTP/1.1 200 OK
+Content-Length: 283
+
+2021-07-29 16:49:24.635826 [info]: request:HTTP/1.1 200 OK
+Content-Length: 283
+Content-Type:text/html
+
+2021-07-29 16:49:24.635834 [info]: request:HTTP/1.1 200 OK
+Content-Length: 283
+Content-Type:text/html
+Connection: keep-alive
+
+2021-07-29 16:49:24.635842 [info]: request:HTTP/1.1 200 OK
+Content-Length: 283
+Content-Type:text/html
+Connection: keep-alive
+
+
+2021-07-29 16:49:24.635858 [info]: adjust timer because of EPOLLIN
+2021-07-29 16:49:24.635917 [info]: send data to the client(10.249.47.36)
+2021-07-29 16:49:24.635931 [info]: adjust timer because of EPOLLOUT
+2021-07-29 16:49:27.511750 [info]: close fd [20] by time cb_func
+2021-07-29 16:49:42.513272 [info]: close fd [18] by time cb_func
+2021-07-29 16:50:21.407344 [info]: deal with the client(10.249.47.36)
+2021-07-29 16:50:21.407464 [info]: adjust timer because of EPOLLIN
+2021-07-29 16:50:21.407555 [info]: POST succeed! name: 周华伟, word: 好气啊
+2021-07-29 16:50:21.407583 [info]: request:HTTP/1.1 200 OK
+
+2021-07-29 16:50:21.407592 [info]: request:HTTP/1.1 200 OK
+Content-Length: 283
+
+2021-07-29 16:50:21.407599 [info]: request:HTTP/1.1 200 OK
+Content-Length: 283
+Content-Type:text/html
+
+2021-07-29 16:50:21.407606 [info]: request:HTTP/1.1 200 OK
+Content-Length: 283
+Content-Type:text/html
+Connection: keep-alive
+
+2021-07-29 16:50:21.407613 [info]: request:HTTP/1.1 200 OK
+Content-Length: 283
+Content-Type:text/html
+Connection: keep-alive
+
+
+2021-07-29 16:50:21.407658 [info]: send data to the client(10.249.47.36)
+2021-07-29 16:50:21.407671 [info]: adjust timer because of EPOLLOUT
+2021-07-29 16:50:38.212632 [info]: close fd [20] by time cb_func
+2021-07-29 16:50:38.212701 [info]: close fd [18] by time cb_func
+2021-07-29 17:16:03.988161 [info]: deal with the client(10.249.47.36)
+2021-07-29 17:16:03.988248 [info]: adjust timer because of EPOLLIN
+2021-07-29 17:16:03.992997 [info]: POST succeed! name: 周华伟, word: 好气啊
+2021-07-29 17:16:03.993278 [info]: request:HTTP/1.1 200 OK
+
+2021-07-29 17:16:03.993321 [info]: request:HTTP/1.1 200 OK
+Content-Length: 283
+
+2021-07-29 17:16:03.993331 [info]: request:HTTP/1.1 200 OK
+Content-Length: 283
+Content-Type:text/html
+
+2021-07-29 17:16:03.993338 [info]: request:HTTP/1.1 200 OK
+Content-Length: 283
+Content-Type:text/html
+Connection: keep-alive
+
+2021-07-29 17:16:03.993345 [info]: request:HTTP/1.1 200 OK
+Content-Length: 283
+Content-Type:text/html
+Connection: keep-alive
+
+
+2021-07-29 17:16:03.993443 [info]: send data to the client(10.249.47.36)
+2021-07-29 17:16:03.993458 [info]: adjust timer because of EPOLLOUT
+2021-07-29 17:16:18.317779 [info]: close fd [20] by time cb_func
+2021-07-29 17:16:18.317854 [info]: close fd [18] by time cb_func
+2021-07-29 17:20:17.204410 [info]: deal with the client(10.249.47.36)
+2021-07-29 17:20:17.204649 [info]: adjust timer because of EPOLLIN
+2021-07-29 17:20:17.206816 [info]: POST succeed! name: 周华伟, word: 好气啊
+2021-07-29 17:20:17.206875 [info]: request:HTTP/1.1 200 OK
+
+2021-07-29 17:20:17.206896 [info]: request:HTTP/1.1 200 OK
+Content-Length: 283
+
+2021-07-29 17:20:17.206905 [info]: request:HTTP/1.1 200 OK
+Content-Length: 283
+Content-Type:text/html
+
+2021-07-29 17:20:17.206912 [info]: request:HTTP/1.1 200 OK
+Content-Length: 283
+Content-Type:text/html
+Connection: keep-alive
+
+2021-07-29 17:20:17.206918 [info]: request:HTTP/1.1 200 OK
+Content-Length: 283
+Content-Type:text/html
+Connection: keep-alive
+
+
+2021-07-29 17:20:17.206974 [info]: send data to the client(10.249.47.36)
+2021-07-29 17:20:17.206988 [info]: adjust timer because of EPOLLOUT
+2021-07-29 17:20:33.336255 [info]: close fd [20] by time cb_func
+2021-07-29 17:20:33.336466 [info]: close fd [18] by time cb_func
+2021-07-29 17:21:09.737429 [info]: deal with the client(10.249.47.36)
+2021-07-29 17:21:09.737582 [info]: request:HTTP/1.1 200 OK
+
+2021-07-29 17:21:09.737598 [info]: request:HTTP/1.1 200 OK
+Content-Length: 730
+
+2021-07-29 17:21:09.737606 [info]: request:HTTP/1.1 200 OK
+Content-Length: 730
+Content-Type:text/html
+
+2021-07-29 17:21:09.737612 [info]: request:HTTP/1.1 200 OK
+Content-Length: 730
+Content-Type:text/html
+Connection: keep-alive
+
+2021-07-29 17:21:09.737619 [info]: request:HTTP/1.1 200 OK
+Content-Length: 730
+Content-Type:text/html
+Connection: keep-alive
+
+
+2021-07-29 17:21:09.737633 [info]: adjust timer because of EPOLLIN
+2021-07-29 17:21:09.737681 [info]: send data to the client(10.249.47.36)
+2021-07-29 17:21:09.737695 [info]: adjust timer because of EPOLLOUT
+2021-07-29 17:21:19.985898 [info]: deal with the client(10.249.47.36)
+2021-07-29 17:21:19.986135 [info]: adjust timer because of EPOLLIN
+2021-07-29 17:21:19.990617 [info]: POST succeed! name: test111, word: hahah222
+2021-07-29 17:21:19.990691 [info]: request:HTTP/1.1 200 OK
+
+2021-07-29 17:21:19.990756 [info]: request:HTTP/1.1 200 OK
+Content-Length: 283
+
+2021-07-29 17:21:19.990769 [info]: request:HTTP/1.1 200 OK
+Content-Length: 283
+Content-Type:text/html
+
+2021-07-29 17:21:19.990777 [info]: request:HTTP/1.1 200 OK
+Content-Length: 283
+Content-Type:text/html
+Connection: keep-alive
+
+2021-07-29 17:21:19.990784 [info]: request:HTTP/1.1 200 OK
+Content-Length: 283
+Content-Type:text/html
+Connection: keep-alive
+
+
+2021-07-29 17:21:19.990871 [info]: send data to the client(10.249.47.36)
+2021-07-29 17:21:19.990886 [info]: adjust timer because of EPOLLOUT
+2021-07-29 17:21:28.339613 [info]: close fd [20] by time cb_func
+2021-07-29 17:21:38.340087 [info]: close fd [18] by time cb_func
+2021-07-29 17:21:49.008302 [info]: deal with the client(10.249.47.36)
+2021-07-29 17:21:49.008512 [info]: adjust timer because of EPOLLIN
+2021-07-29 17:21:49.013067 [info]: POST succeed! name: test111, word: 哈哈222
+2021-07-29 17:21:49.013160 [info]: request:HTTP/1.1 200 OK
+
+2021-07-29 17:21:49.013203 [info]: request:HTTP/1.1 200 OK
+Content-Length: 283
+
+2021-07-29 17:21:49.013212 [info]: request:HTTP/1.1 200 OK
+Content-Length: 283
+Content-Type:text/html
+
+2021-07-29 17:21:49.013219 [info]: request:HTTP/1.1 200 OK
+Content-Length: 283
+Content-Type:text/html
+Connection: keep-alive
+
+2021-07-29 17:21:49.013226 [info]: request:HTTP/1.1 200 OK
+Content-Length: 283
+Content-Type:text/html
+Connection: keep-alive
+
+
+2021-07-29 17:21:49.013469 [info]: send data to the client(10.249.47.36)
+2021-07-29 17:21:49.013510 [info]: adjust timer because of EPOLLOUT
+2021-07-29 17:22:03.342019 [info]: close fd [20] by time cb_func
+2021-07-29 17:22:08.342186 [info]: close fd [18] by time cb_func
+2021-07-29 17:23:09.599840 [info]: deal with the client(10.249.47.36)
+2021-07-29 17:23:09.599999 [info]: adjust timer because of EPOLLIN
+2021-07-29 17:23:09.600096 [info]: request:HTTP/1.1 200 OK
+
+2021-07-29 17:23:09.600205 [info]: request:HTTP/1.1 200 OK
+Content-Length: 730
+
+2021-07-29 17:23:09.600217 [info]: request:HTTP/1.1 200 OK
+Content-Length: 730
+Content-Type:text/html
+
+2021-07-29 17:23:09.600224 [info]: request:HTTP/1.1 200 OK
+Content-Length: 730
+Content-Type:text/html
+Connection: keep-alive
+
+2021-07-29 17:23:09.600231 [info]: request:HTTP/1.1 200 OK
+Content-Length: 730
+Content-Type:text/html
+Connection: keep-alive
+
+
+2021-07-29 17:23:09.600347 [info]: send data to the client(10.249.47.36)
+2021-07-29 17:23:09.600364 [info]: adjust timer because of EPOLLOUT
+2021-07-29 17:23:16.768244 [info]: deal with the client(10.249.47.36)
+2021-07-29 17:23:16.768350 [info]: adjust timer because of EPOLLIN
+2021-07-29 17:23:16.771851 [info]: POST succeed! name: 求求了, word: 正常点
+2021-07-29 17:23:16.771929 [info]: request:HTTP/1.1 200 OK
+
+2021-07-29 17:23:16.771970 [info]: request:HTTP/1.1 200 OK
+Content-Length: 283
+
+2021-07-29 17:23:16.771982 [info]: request:HTTP/1.1 200 OK
+Content-Length: 283
+Content-Type:text/html
+
+2021-07-29 17:23:16.772005 [info]: request:HTTP/1.1 200 OK
+Content-Length: 283
+Content-Type:text/html
+Connection: keep-alive
+
+2021-07-29 17:23:16.772012 [info]: request:HTTP/1.1 200 OK
+Content-Length: 283
+Content-Type:text/html
+Connection: keep-alive
+
+
+2021-07-29 17:23:16.772085 [info]: send data to the client(10.249.47.36)
+2021-07-29 17:23:16.772102 [info]: adjust timer because of EPOLLOUT
+2021-07-29 17:23:27.398052 [info]: close fd [20] by time cb_func
+2021-07-29 17:23:32.398232 [info]: close fd [18] by time cb_func
+2021-07-29 17:23:41.348660 [info]: deal with the client(10.249.47.36)
+2021-07-29 17:23:41.348815 [info]: request:HTTP/1.1 200 OK
+
+2021-07-29 17:23:41.348830 [info]: request:HTTP/1.1 200 OK
+Content-Length: 730
+
+2021-07-29 17:23:41.348838 [info]: request:HTTP/1.1 200 OK
+Content-Length: 730
+Content-Type:text/html
+
+2021-07-29 17:23:41.348845 [info]: request:HTTP/1.1 200 OK
+Content-Length: 730
+Content-Type:text/html
+Connection: keep-alive
+
+2021-07-29 17:23:41.348852 [info]: request:HTTP/1.1 200 OK
+Content-Length: 730
+Content-Type:text/html
+Connection: keep-alive
+
+
+2021-07-29 17:23:41.348865 [info]: adjust timer because of EPOLLIN
+2021-07-29 17:23:41.348924 [info]: send data to the client(10.249.47.36)
+2021-07-29 17:23:41.348940 [info]: adjust timer because of EPOLLOUT
+2021-07-29 17:23:49.117458 [info]: deal with the client(10.249.47.36)
+2021-07-29 17:23:49.117701 [info]: adjust timer because of EPOLLIN
+2021-07-29 17:23:49.123532 [info]: POST succeed! name: 来打我呀, word: 哈哈哈
+2021-07-29 17:23:49.123592 [info]: request:HTTP/1.1 200 OK
+
+2021-07-29 17:23:49.123618 [info]: request:HTTP/1.1 200 OK
+Content-Length: 283
+
+2021-07-29 17:23:49.123627 [info]: request:HTTP/1.1 200 OK
+Content-Length: 283
+Content-Type:text/html
+
+2021-07-29 17:23:49.123635 [info]: request:HTTP/1.1 200 OK
+Content-Length: 283
+Content-Type:text/html
+Connection: keep-alive
+
+2021-07-29 17:23:49.123648 [info]: request:HTTP/1.1 200 OK
+Content-Length: 283
+Content-Type:text/html
+Connection: keep-alive
+
+
+2021-07-29 17:23:49.123707 [info]: send data to the client(10.249.47.36)
+2021-07-29 17:23:49.123727 [info]: adjust timer because of EPOLLOUT
+2021-07-29 17:23:57.401100 [info]: close fd [20] by time cb_func
+2021-07-29 17:23:58.315459 [info]: deal with the client(10.249.47.36)
+2021-07-29 17:23:58.315812 [info]: adjust timer because of EPOLLIN
+2021-07-29 17:23:58.316746 [info]: request:HTTP/1.1 200 OK
+
+2021-07-29 17:23:58.316766 [info]: request:HTTP/1.1 200 OK
+Content-Length: 1087
+
+2021-07-29 17:23:58.316835 [info]: request:HTTP/1.1 200 OK
+Content-Length: 1087
+Content-Type:text/html
+
+2021-07-29 17:23:58.316846 [info]: request:HTTP/1.1 200 OK
+Content-Length: 1087
+Content-Type:text/html
+Connection: keep-alive
+
+2021-07-29 17:23:58.316852 [info]: request:HTTP/1.1 200 OK
+Content-Length: 1087
+Content-Type:text/html
+Connection: keep-alive
+
+
+2021-07-29 17:23:58.316910 [info]: send data to the client(10.249.47.36)
+2021-07-29 17:23:58.316922 [info]: adjust timer because of EPOLLOUT
+2021-07-29 17:24:17.403097 [info]: close fd [20] by time cb_func
+2021-07-29 17:24:17.403162 [info]: close fd [18] by time cb_func
+2021-07-29 17:38:30.054454 [info]: deal with the client(10.249.47.36)
+2021-07-29 17:38:30.054553 [info]: adjust timer because of EPOLLIN
+2021-07-29 17:38:30.054658 [info]: request:HTTP/1.1 200 OK
+
+2021-07-29 17:38:30.054672 [info]: request:HTTP/1.1 200 OK
+Content-Length: 714
+
+2021-07-29 17:38:30.054680 [info]: request:HTTP/1.1 200 OK
+Content-Length: 714
+Content-Type:text/html
+
+2021-07-29 17:38:30.054686 [info]: request:HTTP/1.1 200 OK
+Content-Length: 714
+Content-Type:text/html
+Connection: keep-alive
+
+2021-07-29 17:38:30.054694 [info]: request:HTTP/1.1 200 OK
+Content-Length: 714
+Content-Type:text/html
+Connection: keep-alive
+
+
+2021-07-29 17:38:30.054753 [info]: send data to the client(10.249.47.36)
+2021-07-29 17:38:30.054770 [info]: adjust timer because of EPOLLOUT
+2021-07-29 17:38:40.008561 [info]: deal with the client(10.249.47.36)
+2021-07-29 17:38:40.008632 [info]: adjust timer because of EPOLLIN
+2021-07-29 17:38:40.013781 [info]: POST succeed! name: 终于做完了, word: 不要出错呀
+2021-07-29 17:38:40.013889 [info]: request:HTTP/1.1 200 OK
+
+2021-07-29 17:38:40.013912 [info]: request:HTTP/1.1 200 OK
+Content-Length: 366
+
+2021-07-29 17:38:40.013920 [info]: request:HTTP/1.1 200 OK
+Content-Length: 366
+Content-Type:text/html
+
+2021-07-29 17:38:40.013931 [info]: request:HTTP/1.1 200 OK
+Content-Length: 366
+Content-Type:text/html
+Connection: keep-alive
+
+2021-07-29 17:38:40.013938 [info]: request:HTTP/1.1 200 OK
+Content-Length: 366
+Content-Type:text/html
+Connection: keep-alive
+
+
+2021-07-29 17:38:40.013992 [info]: send data to the client(10.249.47.36)
+2021-07-29 17:38:40.014005 [info]: adjust timer because of EPOLLOUT
+2021-07-29 17:38:45.054156 [info]: close fd [20] by time cb_func
+2021-07-29 17:38:46.751088 [info]: deal with the client(10.249.47.36)
+2021-07-29 17:38:46.751379 [info]: adjust timer because of EPOLLIN
+2021-07-29 17:38:46.752157 [info]: request:HTTP/1.1 200 OK
+
+2021-07-29 17:38:46.752176 [info]: request:HTTP/1.1 200 OK
+Content-Length: 1168
+
+2021-07-29 17:38:46.752259 [info]: request:HTTP/1.1 200 OK
+Content-Length: 1168
+Content-Type:text/html
+
+2021-07-29 17:38:46.752276 [info]: request:HTTP/1.1 200 OK
+Content-Length: 1168
+Content-Type:text/html
+Connection: keep-alive
+
+2021-07-29 17:38:46.752283 [info]: request:HTTP/1.1 200 OK
+Content-Length: 1168
+Content-Type:text/html
+Connection: keep-alive
+
+
+2021-07-29 17:38:46.752346 [info]: send data to the client(10.249.47.36)
+2021-07-29 17:38:46.752365 [info]: adjust timer because of EPOLLOUT
+2021-07-29 17:38:51.382451 [info]: deal with the client(10.249.47.36)
+2021-07-29 17:38:51.382691 [info]: adjust timer because of EPOLLIN
+2021-07-29 17:38:51.384571 [info]: request:HTTP/1.1 200 OK
+
+2021-07-29 17:38:51.384586 [info]: request:HTTP/1.1 200 OK
+Content-Length: 1168
+
+2021-07-29 17:38:51.384594 [info]: request:HTTP/1.1 200 OK
+Content-Length: 1168
+Content-Type:text/html
+
+2021-07-29 17:38:51.384601 [info]: request:HTTP/1.1 200 OK
+Content-Length: 1168
+Content-Type:text/html
+Connection: keep-alive
+
+2021-07-29 17:38:51.384664 [info]: request:HTTP/1.1 200 OK
+Content-Length: 1168
+Content-Type:text/html
+Connection: keep-alive
+
+
+2021-07-29 17:38:51.384716 [info]: send data to the client(10.249.47.36)
+2021-07-29 17:38:51.384728 [info]: adjust timer because of EPOLLOUT
+2021-07-29 17:39:05.055604 [info]: close fd [20] by time cb_func
+2021-07-29 17:39:10.056743 [info]: close fd [18] by time cb_func
+2021-07-29 17:55:10.010447 [info]: deal with the client(10.249.47.36)
+2021-07-29 17:55:10.010669 [info]: request:HTTP/1.1 200 OK
+
+2021-07-29 17:55:10.010688 [info]: request:HTTP/1.1 200 OK
+Content-Length: 4586
+
+2021-07-29 17:55:10.010696 [info]: request:HTTP/1.1 200 OK
+Content-Length: 4586
+Content-Type:text/html
+
+2021-07-29 17:55:10.010703 [info]: request:HTTP/1.1 200 OK
+Content-Length: 4586
+Content-Type:text/html
+Connection: keep-alive
+
+2021-07-29 17:55:10.010710 [info]: request:HTTP/1.1 200 OK
+Content-Length: 4586
+Content-Type:text/html
+Connection: keep-alive
+
+
+2021-07-29 17:55:10.010723 [info]: adjust timer because of EPOLLIN
+2021-07-29 17:55:10.010910 [info]: send data to the client(10.249.47.36)
+2021-07-29 17:55:10.011099 [info]: adjust timer because of EPOLLOUT
+2021-07-29 17:55:10.100981 [info]: deal with the client(10.249.47.36)
+2021-07-29 17:55:10.101270 [info]: request:HTTP/1.1 200 OK
+
+2021-07-29 17:55:10.101303 [info]: request:HTTP/1.1 200 OK
+Content-Length: 97267
+
+2021-07-29 17:55:10.101313 [info]: request:HTTP/1.1 200 OK
+Content-Length: 97267
+Content-Type:text/html
+
+2021-07-29 17:55:10.101320 [info]: request:HTTP/1.1 200 OK
+Content-Length: 97267
+Content-Type:text/html
+Connection: keep-alive
+
+2021-07-29 17:55:10.101327 [info]: request:HTTP/1.1 200 OK
+Content-Length: 97267
+Content-Type:text/html
+Connection: keep-alive
+
+
+2021-07-29 17:55:10.101349 [info]: adjust timer because of EPOLLIN
+2021-07-29 17:55:10.101519 [info]: send data to the client(10.249.47.36)
+2021-07-29 17:55:10.101543 [info]: adjust timer because of EPOLLOUT
+2021-07-29 17:55:10.112195 [info]: deal with the client(10.249.47.36)
+2021-07-29 17:55:10.112406 [info]: request:HTTP/1.1 200 OK
+
+2021-07-29 17:55:10.112534 [info]: request:HTTP/1.1 200 OK
+Content-Length: 42883
+
+2021-07-29 17:55:10.112547 [info]: request:HTTP/1.1 200 OK
+Content-Length: 42883
+Content-Type:text/html
+
+2021-07-29 17:55:10.112554 [info]: request:HTTP/1.1 200 OK
+Content-Length: 42883
+Content-Type:text/html
+Connection: keep-alive
+
+2021-07-29 17:55:10.112561 [info]: request:HTTP/1.1 200 OK
+Content-Length: 42883
+Content-Type:text/html
+Connection: keep-alive
+
+
+2021-07-29 17:55:10.112579 [info]: adjust timer because of EPOLLIN
+2021-07-29 17:55:10.112594 [info]: deal with the client(10.249.47.36)
+2021-07-29 17:55:10.112673 [info]: request:HTTP/1.1 200 OK
+
+2021-07-29 17:55:10.112685 [info]: request:HTTP/1.1 200 OK
+Content-Length: 31068
+
+2021-07-29 17:55:10.112693 [info]: request:HTTP/1.1 200 OK
+Content-Length: 31068
+Content-Type:text/html
+
+2021-07-29 17:55:10.112700 [info]: request:HTTP/1.1 200 OK
+Content-Length: 31068
+Content-Type:text/html
+Connection: keep-alive
+
+2021-07-29 17:55:10.112707 [info]: request:HTTP/1.1 200 OK
+Content-Length: 31068
+Content-Type:text/html
+Connection: keep-alive
+
+
+2021-07-29 17:55:10.112719 [info]: adjust timer because of EPOLLIN
+2021-07-29 17:55:10.113077 [info]: send data to the client(10.249.47.36)
+2021-07-29 17:55:10.113161 [info]: adjust timer because of EPOLLOUT
+2021-07-29 17:55:10.113476 [info]: send data to the client(10.249.47.36)
+2021-07-29 17:55:10.113499 [info]: adjust timer because of EPOLLOUT
+2021-07-29 17:55:10.113906 [info]: deal with the client(10.249.47.36)
+2021-07-29 17:55:10.114059 [info]: request:HTTP/1.1 200 OK
+
+2021-07-29 17:55:10.114072 [info]: request:HTTP/1.1 200 OK
+Content-Length: 28807
+
+2021-07-29 17:55:10.114080 [info]: request:HTTP/1.1 200 OK
+Content-Length: 28807
+Content-Type:text/html
+
+2021-07-29 17:55:10.114087 [info]: request:HTTP/1.1 200 OK
+Content-Length: 28807
+Content-Type:text/html
+Connection: keep-alive
+
+2021-07-29 17:55:10.114095 [info]: request:HTTP/1.1 200 OK
+Content-Length: 28807
+Content-Type:text/html
+Connection: keep-alive
+
+
+2021-07-29 17:55:10.114120 [info]: adjust timer because of EPOLLIN
+2021-07-29 17:55:10.114202 [info]: send data to the client(10.249.47.36)
+2021-07-29 17:55:10.114219 [info]: adjust timer because of EPOLLOUT
+2021-07-29 17:55:12.662099 [info]: deal with the client(10.249.47.36)
+2021-07-29 17:55:12.662389 [info]: adjust timer because of EPOLLIN
+2021-07-29 17:55:12.665214 [info]: request:HTTP/1.1 200 OK
+
+2021-07-29 17:55:12.665262 [info]: request:HTTP/1.1 200 OK
+Content-Length: 1168
+
+2021-07-29 17:55:12.665274 [info]: request:HTTP/1.1 200 OK
+Content-Length: 1168
+Content-Type:text/html
+
+2021-07-29 17:55:12.665281 [info]: request:HTTP/1.1 200 OK
+Content-Length: 1168
+Content-Type:text/html
+Connection: keep-alive
+
+2021-07-29 17:55:12.665288 [info]: request:HTTP/1.1 200 OK
+Content-Length: 1168
+Content-Type:text/html
+Connection: keep-alive
+
+
+2021-07-29 17:55:12.665560 [info]: send data to the client(10.249.47.36)
+2021-07-29 17:55:12.665588 [info]: adjust timer because of EPOLLOUT
+2021-07-29 17:55:16.870683 [info]: deal with the client(10.249.47.36)
+2021-07-29 17:55:16.870807 [info]: request:HTTP/1.1 200 OK
+
+2021-07-29 17:55:16.870818 [info]: request:HTTP/1.1 200 OK
+Content-Length: 714
+
+2021-07-29 17:55:16.870825 [info]: request:HTTP/1.1 200 OK
+Content-Length: 714
+Content-Type:text/html
+
+2021-07-29 17:55:16.870832 [info]: request:HTTP/1.1 200 OK
+Content-Length: 714
+Content-Type:text/html
+Connection: keep-alive
+
+2021-07-29 17:55:16.870838 [info]: request:HTTP/1.1 200 OK
+Content-Length: 714
+Content-Type:text/html
+Connection: keep-alive
+
+
+2021-07-29 17:55:16.870851 [info]: adjust timer because of EPOLLIN
+2021-07-29 17:55:16.870913 [info]: send data to the client(10.249.47.36)
+2021-07-29 17:55:16.870925 [info]: adjust timer because of EPOLLOUT
+2021-07-29 17:55:25.132821 [info]: close fd [20] by time cb_func
+2021-07-29 17:55:25.133023 [info]: close fd [21] by time cb_func
+2021-07-29 17:55:35.134362 [info]: close fd [18] by time cb_func
+2021-07-29 17:55:53.357266 [info]: deal with the client(10.249.47.36)
+2021-07-29 17:55:53.357450 [info]: adjust timer because of EPOLLIN
+2021-07-29 17:55:53.360857 [info]: POST succeed! name: 测试, word: &lt;div style="color : red; font-size:100"&gt;华伟我爱你&lt;/div&gt;
+2021-07-29 17:55:53.360915 [info]: request:HTTP/1.1 200 OK
+
+2021-07-29 17:55:53.360941 [info]: request:HTTP/1.1 200 OK
+Content-Length: 366
+
+2021-07-29 17:55:53.360949 [info]: request:HTTP/1.1 200 OK
+Content-Length: 366
+Content-Type:text/html
+
+2021-07-29 17:55:53.360956 [info]: request:HTTP/1.1 200 OK
+Content-Length: 366
+Content-Type:text/html
+Connection: keep-alive
+
+2021-07-29 17:55:53.360963 [info]: request:HTTP/1.1 200 OK
+Content-Length: 366
+Content-Type:text/html
+Connection: keep-alive
+
+
+2021-07-29 17:55:53.361027 [info]: send data to the client(10.249.47.36)
+2021-07-29 17:55:53.361040 [info]: adjust timer because of EPOLLOUT
+2021-07-29 17:55:54.318882 [info]: deal with the client(10.249.47.36)
+2021-07-29 17:55:54.319097 [info]: adjust timer because of EPOLLIN
+2021-07-29 17:55:54.319797 [info]: request:HTTP/1.1 200 OK
+
+2021-07-29 17:55:54.319817 [info]: request:HTTP/1.1 200 OK
+Content-Length: 1298
+
+2021-07-29 17:55:54.319825 [info]: request:HTTP/1.1 200 OK
+Content-Length: 1298
+Content-Type:text/html
+
+2021-07-29 17:55:54.319832 [info]: request:HTTP/1.1 200 OK
+Content-Length: 1298
+Content-Type:text/html
+Connection: keep-alive
+
+2021-07-29 17:55:54.319839 [info]: request:HTTP/1.1 200 OK
+Content-Length: 1298
+Content-Type:text/html
+Connection: keep-alive
+
+
+2021-07-29 17:55:54.319897 [info]: send data to the client(10.249.47.36)
+2021-07-29 17:55:54.319911 [info]: adjust timer because of EPOLLOUT
+2021-07-29 17:56:10.137497 [info]: close fd [20] by time cb_func
+2021-07-29 17:56:10.137583 [info]: close fd [18] by time cb_func
+2021-07-29 18:23:15.731141 [info]: deal with the client(10.249.47.36)
+2021-07-29 18:23:15.731227 [info]: adjust timer because of EPOLLIN
+2021-07-29 18:23:15.731317 [info]: request:HTTP/1.1 200 OK
+
+2021-07-29 18:23:15.731337 [info]: request:HTTP/1.1 200 OK
+Content-Length: 4586
+
+2021-07-29 18:23:15.731344 [info]: request:HTTP/1.1 200 OK
+Content-Length: 4586
+Content-Type:text/html
+
+2021-07-29 18:23:15.731351 [info]: request:HTTP/1.1 200 OK
+Content-Length: 4586
+Content-Type:text/html
+Connection: keep-alive
+
+2021-07-29 18:23:15.731357 [info]: request:HTTP/1.1 200 OK
+Content-Length: 4586
+Content-Type:text/html
+Connection: keep-alive
+
+
+2021-07-29 18:23:15.731417 [info]: send data to the client(10.249.47.36)
+2021-07-29 18:23:15.731432 [info]: adjust timer because of EPOLLOUT
+2021-07-29 18:23:15.755665 [info]: deal with the client(10.249.47.36)
+2021-07-29 18:23:15.755771 [info]: adjust timer because of EPOLLIN
+2021-07-29 18:23:15.755785 [info]: deal with the client(10.249.47.36)
+2021-07-29 18:23:15.755796 [info]: adjust timer because of EPOLLIN
+2021-07-29 18:23:15.755875 [info]: request:HTTP/1.1 200 OK
+
+2021-07-29 18:23:15.755886 [info]: request:HTTP/1.1 200 OK
+Content-Length: 97267
+
+2021-07-29 18:23:15.755893 [info]: request:HTTP/1.1 200 OK
+Content-Length: 97267
+Content-Type:text/html
+
+2021-07-29 18:23:15.755899 [info]: request:HTTP/1.1 200 OK
+Content-Length: 97267
+Content-Type:text/html
+Connection: keep-alive
+
+2021-07-29 18:23:15.755905 [info]: request:HTTP/1.1 200 OK
+Content-Length: 97267
+Content-Type:text/html
+Connection: keep-alive
+
+
+2021-07-29 18:23:15.755947 [info]: request:HTTP/1.1 200 OK
+
+2021-07-29 18:23:15.755954 [info]: request:HTTP/1.1 200 OK
+Content-Length: 42883
+
+2021-07-29 18:23:15.755960 [info]: request:HTTP/1.1 200 OK
+Content-Length: 42883
+Content-Type:text/html
+
+2021-07-29 18:23:15.755967 [info]: request:HTTP/1.1 200 OK
+Content-Length: 42883
+Content-Type:text/html
+Connection: keep-alive
+
+2021-07-29 18:23:15.755973 [info]: request:HTTP/1.1 200 OK
+Content-Length: 42883
+Content-Type:text/html
+Connection: keep-alive
+
+
+2021-07-29 18:23:15.756059 [info]: send data to the client(10.249.47.36)
+2021-07-29 18:23:15.756072 [info]: adjust timer because of EPOLLOUT
+2021-07-29 18:23:15.756120 [info]: send data to the client(10.249.47.36)
+2021-07-29 18:23:15.756132 [info]: adjust timer because of EPOLLOUT
+2021-07-29 18:23:15.762707 [info]: deal with the client(10.249.47.36)
+2021-07-29 18:23:15.762813 [info]: adjust timer because of EPOLLIN
+2021-07-29 18:23:15.762889 [info]: request:HTTP/1.1 200 OK
+
+2021-07-29 18:23:15.762956 [info]: request:HTTP/1.1 200 OK
+Content-Length: 31068
+
+2021-07-29 18:23:15.762966 [info]: request:HTTP/1.1 200 OK
+Content-Length: 31068
+Content-Type:text/html
+
+2021-07-29 18:23:15.762972 [info]: request:HTTP/1.1 200 OK
+Content-Length: 31068
+Content-Type:text/html
+Connection: keep-alive
+
+2021-07-29 18:23:15.762994 [info]: request:HTTP/1.1 200 OK
+Content-Length: 31068
+Content-Type:text/html
+Connection: keep-alive
+
+
+2021-07-29 18:23:15.763087 [info]: deal with the client(10.249.47.36)
+2021-07-29 18:23:15.763108 [info]: adjust timer because of EPOLLIN
+2021-07-29 18:23:15.763175 [info]: send data to the client(10.249.47.36)
+2021-07-29 18:23:15.763187 [info]: adjust timer because of EPOLLOUT
+2021-07-29 18:23:15.763347 [info]: request:HTTP/1.1 200 OK
+
+2021-07-29 18:23:15.763405 [info]: request:HTTP/1.1 200 OK
+Content-Length: 28807
+
+2021-07-29 18:23:15.763414 [info]: request:HTTP/1.1 200 OK
+Content-Length: 28807
+Content-Type:text/html
+
+2021-07-29 18:23:15.763480 [info]: request:HTTP/1.1 200 OK
+Content-Length: 28807
+Content-Type:text/html
+Connection: keep-alive
+
+2021-07-29 18:23:15.763489 [info]: request:HTTP/1.1 200 OK
+Content-Length: 28807
+Content-Type:text/html
+Connection: keep-alive
+
+
+2021-07-29 18:23:15.763625 [info]: send data to the client(10.249.47.36)
+2021-07-29 18:23:15.763639 [info]: adjust timer because of EPOLLOUT
+2021-07-29 18:23:17.994024 [info]: deal with the client(10.249.47.36)
+2021-07-29 18:23:17.994103 [info]: adjust timer because of EPOLLIN
+2021-07-29 18:23:17.994187 [info]: request:HTTP/1.1 200 OK
+
+2021-07-29 18:23:17.994200 [info]: request:HTTP/1.1 200 OK
+Content-Length: 714
+
+2021-07-29 18:23:17.994214 [info]: request:HTTP/1.1 200 OK
+Content-Length: 714
+Content-Type:text/html
+
+2021-07-29 18:23:17.994221 [info]: request:HTTP/1.1 200 OK
+Content-Length: 714
+Content-Type:text/html
+Connection: keep-alive
+
+2021-07-29 18:23:17.994228 [info]: request:HTTP/1.1 200 OK
+Content-Length: 714
+Content-Type:text/html
+Connection: keep-alive
+
+
+2021-07-29 18:23:17.994311 [info]: send data to the client(10.249.47.36)
+2021-07-29 18:23:17.994332 [info]: adjust timer because of EPOLLOUT
+2021-07-29 18:23:23.727371 [info]: deal with the client(10.249.47.36)
+2021-07-29 18:23:23.727441 [info]: adjust timer because of EPOLLIN
+2021-07-29 18:23:23.732240 [info]: boardwriting succeed! name: 吃晚饭啦, word: 很开心
+2021-07-29 18:23:23.732298 [info]: request:HTTP/1.1 200 OK
+
+2021-07-29 18:23:23.732326 [info]: request:HTTP/1.1 200 OK
+Content-Length: 366
+
+2021-07-29 18:23:23.732334 [info]: request:HTTP/1.1 200 OK
+Content-Length: 366
+Content-Type:text/html
+
+2021-07-29 18:23:23.732341 [info]: request:HTTP/1.1 200 OK
+Content-Length: 366
+Content-Type:text/html
+Connection: keep-alive
+
+2021-07-29 18:23:23.732352 [info]: request:HTTP/1.1 200 OK
+Content-Length: 366
+Content-Type:text/html
+Connection: keep-alive
+
+
+2021-07-29 18:23:23.732401 [info]: send data to the client(10.249.47.36)
+2021-07-29 18:23:23.732413 [info]: adjust timer because of EPOLLOUT
+2021-07-29 18:23:24.711871 [info]: deal with the client(10.249.47.36)
+2021-07-29 18:23:24.711937 [info]: adjust timer because of EPOLLIN
+2021-07-29 18:23:24.712802 [info]: request:HTTP/1.1 200 OK
+
+2021-07-29 18:23:24.712835 [info]: request:HTTP/1.1 200 OK
+Content-Length: 1370
+
+2021-07-29 18:23:24.712844 [info]: request:HTTP/1.1 200 OK
+Content-Length: 1370
+Content-Type:text/html
+
+2021-07-29 18:23:24.712851 [info]: request:HTTP/1.1 200 OK
+Content-Length: 1370
+Content-Type:text/html
+Connection: keep-alive
+
+2021-07-29 18:23:24.712857 [info]: request:HTTP/1.1 200 OK
+Content-Length: 1370
+Content-Type:text/html
+Connection: keep-alive
+
+
+2021-07-29 18:23:24.712947 [info]: send data to the client(10.249.47.36)
+2021-07-29 18:23:24.712969 [info]: adjust timer because of EPOLLOUT
+2021-07-29 18:23:34.090583 [info]: close fd [21] by time cb_func
+2021-07-29 18:23:34.090661 [info]: close fd [20] by time cb_func
+2021-07-29 18:23:39.091040 [info]: close fd [18] by time cb_func
+2021-07-29 18:36:31.674097 [info]: deal with the client(10.249.47.36)
+2021-07-29 18:36:31.674298 [info]: request:HTTP/1.1 200 OK
+
+2021-07-29 18:36:31.674312 [info]: request:HTTP/1.1 200 OK
+Content-Length: 4596
+
+2021-07-29 18:36:31.674319 [info]: request:HTTP/1.1 200 OK
+Content-Length: 4596
+Content-Type:text/html
+
+2021-07-29 18:36:31.674327 [info]: request:HTTP/1.1 200 OK
+Content-Length: 4596
+Content-Type:text/html
+Connection: keep-alive
+
+2021-07-29 18:36:31.674334 [info]: request:HTTP/1.1 200 OK
+Content-Length: 4596
+Content-Type:text/html
+Connection: keep-alive
+
+
+2021-07-29 18:36:31.674348 [info]: adjust timer because of EPOLLIN
+2021-07-29 18:36:31.674424 [info]: send data to the client(10.249.47.36)
+2021-07-29 18:36:31.674448 [info]: adjust timer because of EPOLLOUT
+2021-07-29 18:36:31.710290 [info]: deal with the client(10.249.47.36)
+2021-07-29 18:36:31.710480 [info]: request:HTTP/1.1 200 OK
+
+2021-07-29 18:36:31.710495 [info]: request:HTTP/1.1 200 OK
+Content-Length: 97267
+
+2021-07-29 18:36:31.710502 [info]: request:HTTP/1.1 200 OK
+Content-Length: 97267
+Content-Type:text/html
+
+2021-07-29 18:36:31.710510 [info]: request:HTTP/1.1 200 OK
+Content-Length: 97267
+Content-Type:text/html
+Connection: keep-alive
+
+2021-07-29 18:36:31.710517 [info]: request:HTTP/1.1 200 OK
+Content-Length: 97267
+Content-Type:text/html
+Connection: keep-alive
+
+
+2021-07-29 18:36:31.710532 [info]: adjust timer because of EPOLLIN
+2021-07-29 18:36:31.710545 [info]: deal with the client(10.249.47.36)
+2021-07-29 18:36:31.710616 [info]: request:HTTP/1.1 200 OK
+
+2021-07-29 18:36:31.710628 [info]: request:HTTP/1.1 200 OK
+Content-Length: 42883
+
+2021-07-29 18:36:31.710635 [info]: request:HTTP/1.1 200 OK
+Content-Length: 42883
+Content-Type:text/html
+
+2021-07-29 18:36:31.710650 [info]: request:HTTP/1.1 200 OK
+Content-Length: 42883
+Content-Type:text/html
+Connection: keep-alive
+
+2021-07-29 18:36:31.710658 [info]: request:HTTP/1.1 200 OK
+Content-Length: 42883
+Content-Type:text/html
+Connection: keep-alive
+
+
+2021-07-29 18:36:31.710669 [info]: adjust timer because of EPOLLIN
+2021-07-29 18:36:31.710820 [info]: send data to the client(10.249.47.36)
+2021-07-29 18:36:31.710843 [info]: adjust timer because of EPOLLOUT
+2021-07-29 18:36:31.710902 [info]: send data to the client(10.249.47.36)
+2021-07-29 18:36:31.710914 [info]: adjust timer because of EPOLLOUT
+2021-07-29 18:36:31.725279 [info]: deal with the client(10.249.47.36)
+2021-07-29 18:36:31.725455 [info]: request:HTTP/1.1 200 OK
+
+2021-07-29 18:36:31.725471 [info]: request:HTTP/1.1 200 OK
+Content-Length: 31068
+
+2021-07-29 18:36:31.725478 [info]: request:HTTP/1.1 200 OK
+Content-Length: 31068
+Content-Type:text/html
+
+2021-07-29 18:36:31.725485 [info]: request:HTTP/1.1 200 OK
+Content-Length: 31068
+Content-Type:text/html
+Connection: keep-alive
+
+2021-07-29 18:36:31.725492 [info]: request:HTTP/1.1 200 OK
+Content-Length: 31068
+Content-Type:text/html
+Connection: keep-alive
+
+
+2021-07-29 18:36:31.725516 [info]: adjust timer because of EPOLLIN
+2021-07-29 18:36:31.725546 [info]: deal with the client(10.249.47.36)
+2021-07-29 18:36:31.725648 [info]: request:HTTP/1.1 200 OK
+
+2021-07-29 18:36:31.725660 [info]: request:HTTP/1.1 200 OK
+Content-Length: 28807
+
+2021-07-29 18:36:31.725667 [info]: request:HTTP/1.1 200 OK
+Content-Length: 28807
+Content-Type:text/html
+
+2021-07-29 18:36:31.725674 [info]: request:HTTP/1.1 200 OK
+Content-Length: 28807
+Content-Type:text/html
+Connection: keep-alive
+
+2021-07-29 18:36:31.725682 [info]: request:HTTP/1.1 200 OK
+Content-Length: 28807
+Content-Type:text/html
+Connection: keep-alive
+
+
+2021-07-29 18:36:31.725694 [info]: adjust timer because of EPOLLIN
+2021-07-29 18:36:31.725768 [info]: send data to the client(10.249.47.36)
+2021-07-29 18:36:31.725793 [info]: adjust timer because of EPOLLOUT
+2021-07-29 18:36:31.726001 [info]: send data to the client(10.249.47.36)
+2021-07-29 18:36:31.726016 [info]: adjust timer because of EPOLLOUT
+2021-07-29 18:36:38.671064 [info]: deal with the client(10.249.47.36)
+2021-07-29 18:36:38.671916 [info]: adjust timer because of EPOLLIN
+2021-07-29 18:36:38.679038 [info]: request:HTTP/1.1 200 OK
+
+2021-07-29 18:36:38.679176 [info]: request:HTTP/1.1 200 OK
+Content-Length: 1370
+
+2021-07-29 18:36:38.679194 [info]: request:HTTP/1.1 200 OK
+Content-Length: 1370
+Content-Type:text/html
+
+2021-07-29 18:36:38.679202 [info]: request:HTTP/1.1 200 OK
+Content-Length: 1370
+Content-Type:text/html
+Connection: keep-alive
+
+2021-07-29 18:36:38.679212 [info]: request:HTTP/1.1 200 OK
+Content-Length: 1370
+Content-Type:text/html
+Connection: keep-alive
+
+
+2021-07-29 18:36:38.679366 [info]: send data to the client(10.249.47.36)
+2021-07-29 18:36:38.679386 [info]: adjust timer because of EPOLLOUT
+2021-07-29 18:36:49.151061 [info]: close fd [18] by time cb_func
+2021-07-29 18:36:54.151789 [info]: close fd [20] by time cb_func
+2021-07-29 18:37:15.339181 [info]: deal with the client(10.249.47.36)
+2021-07-29 18:37:15.339323 [info]: request:HTTP/1.1 200 OK
+
+2021-07-29 18:37:15.339334 [info]: request:HTTP/1.1 200 OK
+Content-Length: 368
+
+2021-07-29 18:37:15.339342 [info]: request:HTTP/1.1 200 OK
+Content-Length: 368
+Content-Type:text/html
+
+2021-07-29 18:37:15.339348 [info]: request:HTTP/1.1 200 OK
+Content-Length: 368
+Content-Type:text/html
+Connection: keep-alive
+
+2021-07-29 18:37:15.339356 [info]: request:HTTP/1.1 200 OK
+Content-Length: 368
+Content-Type:text/html
+Connection: keep-alive
+
+
+2021-07-29 18:37:15.339369 [info]: adjust timer because of EPOLLIN
+2021-07-29 18:37:15.340848 [info]: send data to the client(10.249.47.36)
+2021-07-29 18:37:15.340896 [info]: adjust timer because of EPOLLOUT
+2021-07-29 18:37:15.411203 [info]: deal with the client(10.249.47.36)
+2021-07-29 18:37:15.411371 [info]: request:HTTP/1.1 200 OK
+
+2021-07-29 18:37:15.411407 [info]: request:HTTP/1.1 200 OK
+Content-Length: 14826
+
+2021-07-29 18:37:15.411417 [info]: request:HTTP/1.1 200 OK
+Content-Length: 14826
+Content-Type:text/html
+
+2021-07-29 18:37:15.411424 [info]: request:HTTP/1.1 200 OK
+Content-Length: 14826
+Content-Type:text/html
+Connection: keep-alive
+
+2021-07-29 18:37:15.411430 [info]: request:HTTP/1.1 200 OK
+Content-Length: 14826
+Content-Type:text/html
+Connection: keep-alive
+
+
+2021-07-29 18:37:15.411447 [info]: adjust timer because of EPOLLIN
+2021-07-29 18:37:15.411903 [info]: send data to the client(10.249.47.36)
+2021-07-29 18:37:15.411928 [info]: adjust timer because of EPOLLOUT
+2021-07-29 18:37:19.485076 [info]: deal with the client(10.249.47.36)
+2021-07-29 18:37:19.485253 [info]: request:HTTP/1.1 200 OK
+
+2021-07-29 18:37:19.485265 [info]: request:HTTP/1.1 200 OK
+Content-Length: 381
+
+2021-07-29 18:37:19.485272 [info]: request:HTTP/1.1 200 OK
+Content-Length: 381
+Content-Type:text/html
+
+2021-07-29 18:37:19.485278 [info]: request:HTTP/1.1 200 OK
+Content-Length: 381
+Content-Type:text/html
+Connection: keep-alive
+
+2021-07-29 18:37:19.485284 [info]: request:HTTP/1.1 200 OK
+Content-Length: 381
+Content-Type:text/html
+Connection: keep-alive
+
+
+2021-07-29 18:37:19.485297 [info]: adjust timer because of EPOLLIN
+2021-07-29 18:37:19.487232 [info]: send data to the client(10.249.47.36)
+2021-07-29 18:37:19.487285 [info]: adjust timer because of EPOLLOUT
+2021-07-29 18:37:19.540581 [info]: deal with the client(10.249.47.36)
+2021-07-29 18:37:19.540721 [info]: request:HTTP/1.1 200 OK
+
+2021-07-29 18:37:19.540732 [info]: request:HTTP/1.1 200 OK
+Content-Length: 98830
+
+2021-07-29 18:37:19.540740 [info]: request:HTTP/1.1 200 OK
+Content-Length: 98830
+Content-Type:text/html
+
+2021-07-29 18:37:19.540746 [info]: request:HTTP/1.1 200 OK
+Content-Length: 98830
+Content-Type:text/html
+Connection: keep-alive
+
+2021-07-29 18:37:19.540752 [info]: request:HTTP/1.1 200 OK
+Content-Length: 98830
+Content-Type:text/html
+Connection: keep-alive
+
+
+2021-07-29 18:37:19.540766 [info]: adjust timer because of EPOLLIN
+2021-07-29 18:37:19.541385 [info]: send data to the client(10.249.47.36)
+2021-07-29 18:37:19.541433 [info]: adjust timer because of EPOLLOUT
+2021-07-29 18:37:25.542193 [info]: deal with the client(10.249.47.36)
+2021-07-29 18:37:25.542505 [info]: adjust timer because of EPOLLIN
+2021-07-29 18:37:25.545003 [info]: request:HTTP/1.1 200 OK
+
+2021-07-29 18:37:25.545029 [info]: request:HTTP/1.1 200 OK
+Content-Length: 1370
+
+2021-07-29 18:37:25.545037 [info]: request:HTTP/1.1 200 OK
+Content-Length: 1370
+Content-Type:text/html
+
+2021-07-29 18:37:25.545045 [info]: request:HTTP/1.1 200 OK
+Content-Length: 1370
+Content-Type:text/html
+Connection: keep-alive
+
+2021-07-29 18:37:25.545051 [info]: request:HTTP/1.1 200 OK
+Content-Length: 1370
+Content-Type:text/html
+Connection: keep-alive
+
+
+2021-07-29 18:37:25.545117 [info]: send data to the client(10.249.47.36)
+2021-07-29 18:37:25.545131 [info]: adjust timer because of EPOLLOUT
+2021-07-29 18:37:26.839491 [info]: deal with the client(10.249.47.36)
+2021-07-29 18:37:26.839714 [info]: adjust timer because of EPOLLIN
+2021-07-29 18:37:26.840521 [info]: request:HTTP/1.1 200 OK
+
+2021-07-29 18:37:26.840539 [info]: request:HTTP/1.1 200 OK
+Content-Length: 1370
+
+2021-07-29 18:37:26.840547 [info]: request:HTTP/1.1 200 OK
+Content-Length: 1370
+Content-Type:text/html
+
+2021-07-29 18:37:26.840554 [info]: request:HTTP/1.1 200 OK
+Content-Length: 1370
+Content-Type:text/html
+Connection: keep-alive
+
+2021-07-29 18:37:26.840560 [info]: request:HTTP/1.1 200 OK
+Content-Length: 1370
+Content-Type:text/html
+Connection: keep-alive
+
+
+2021-07-29 18:37:26.840617 [info]: send data to the client(10.249.47.36)
+2021-07-29 18:37:26.840631 [info]: adjust timer because of EPOLLOUT
+2021-07-29 18:37:34.153330 [info]: close fd [20] by time cb_func
+2021-07-29 18:37:44.153734 [info]: close fd [18] by time cb_func

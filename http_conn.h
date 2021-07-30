@@ -20,6 +20,7 @@
 #include <errno.h>
 #include "locker.h"
 #include <sys/uio.h>
+#include "sql_connection_pool.h"  //v5.0头文件
 
 class http_conn
 {
@@ -59,7 +60,7 @@ public:
     http_conn(){}
     ~http_conn(){}
 public:
-    void init(int sockfd, const sockaddr_in& addr); // 初始化新接受的连接
+    void init(int sockfd, const sockaddr_in& addr, connection_pool *connPool); // 初始化新接受的连接
     void close_conn(bool real_close = true);  // 关闭连接
     void process(); // 处理客户端请求
     bool read();// 非阻塞读
@@ -92,11 +93,16 @@ private:
     bool add_linger();
     bool add_blank_line();
 
+    void writeboard(char* content);  //v5.0 写留言板函数
+
 public:
     static int m_epollfd;       // 所有socket上的事件都被注册到同一个epoll内核事件中，所以设置成静态的
     static int m_user_count;    // 统计用户的数量
     static int word_count;  //v3.0 留言数量
     static locker board_lock; //v3.0 boardview.html互斥锁
+    MYSQL *mysql;  //v5.0 数据库指针
+    connection_pool *connPool;  //v5.0 连接池指针
+
 
 private:
     int m_sockfd;           // 该HTTP连接的socket和对方的socket地址

@@ -1,6 +1,5 @@
 #include "http_conn.h"
 #include <fstream>
-#include <fstream>
 #include <string>
 #include <stdio.h>
 #include <string.h>
@@ -10,6 +9,7 @@
 #include <iostream>
 #include "locker.h"
 #include "log.h"
+#include <mysql/mysql.h>  //5.0 头文件别忘了
 using namespace std;
 
 
@@ -87,9 +87,10 @@ void http_conn::close_conn(bool real_close) {
 }
 
 // 初始化连接,外部调用初始化套接字地址
-void http_conn::init(int sockfd, const sockaddr_in& addr){
+void http_conn::init(int sockfd, const sockaddr_in& addr, connection_pool *_connPool){  //v5.0更新 连接池初始化
     m_sockfd = sockfd;
     m_address = addr;
+    connPool = _connPool;  //v5.0
     char _ip[64];
     inet_ntop(AF_INET, &m_address.sin_addr, _ip,sizeof(_ip));
     uint16_t port = addr.sin_port;
@@ -104,6 +105,7 @@ void http_conn::init(int sockfd, const sockaddr_in& addr){
 
 void http_conn::init()
 {
+    mysql = NULL;  //v5.0 mysql初始化
     m_check_state = CHECK_STATE_REQUESTLINE;    // 初始状态为检查请求行
     m_linger = false;       // 默认不保持链接  Connection : keep-alive保持连接
 
@@ -177,6 +179,7 @@ vector<string> decode(string m_text) {
     return vector<string>{UrlDecode(name), UrlDecode(word)};
 }
 
+/* v4.0 直接把数据写到网页
 void writeboard(char* content){
     http_conn::word_count++;
     string str = content;
@@ -200,6 +203,39 @@ void writeboard(char* content){
     http_conn::board_lock.unlock();  //写完解锁
     //printf("write succeed! \n");
     return;
+}
+*/
+
+//v5.0 向mysql数据库中写入数据
+void http_conn::writeboard(char* content){
+    http_conn::word_count++;
+    string str = content;
+    vector<string> nameWord = decode(str);
+    string nameVal = nameWord[0];
+    string wordVal = nameWord[1];
+    const char* cname = nameVal.c_str();
+    const char* cword = wordVal.c_str();
+    char *sql_insert = (char *)malloc(sizeof(char) * 200);
+    strcpy(sql_insert, "INSERT INTO board(name, word, time) VALUES(");
+    strcat(sql_insert, "'");
+    strcat(sql_insert, cname);
+    strcat(sql_insert, "','");
+    strcat(sql_insert, cword);
+    strcat(sql_insert, "',now())");
+    //printf("%s\n", sql_insert);
+    http_conn::board_lock.lock();
+    MYSQL *mysql = NULL;
+    connectionRAII mysqlcon(&mysql, connPool);  
+    mysql_query(mysql, "set names utf8");  //支持中文
+    int res = mysql_query(mysql, sql_insert);
+    if(!res){
+        strcpy(m_url, "/boardsucceed.html");  //向数据库写入数据成功
+    }
+    else{
+        strcpy(m_url, "/boardfailed.html");  //向数据库写入数据失败
+    }
+    http_conn::board_lock.unlock();  //解锁
+    LOG_INFO("boardwriting succeed! name: %s, word: %s", cname, cword);
 }
 
 // 循环读取客户数据，直到无数据可读或者对方关闭连接
@@ -343,8 +379,9 @@ http_conn::HTTP_CODE http_conn::parse_content( char* text ) {
         text[ m_content_length ] = '\0';
         //v3.0 记录消息体内容
         m_string = text;
+        //printf("%s\n", m_url);
         printf("GET_POST: %s\n", m_string);
-        if(post_index && m_string){
+        if(post_index && m_string && strcmp(m_url, "/0") == 0){
             printf("entering writeboard function! \n");
             writeboard(m_string);
         }
@@ -407,8 +444,53 @@ http_conn::HTTP_CODE http_conn::do_request()
     printf("do_request!\n");
     strcpy( m_real_file, doc_root );
     int len = strlen( doc_root ); 
-    strncpy( m_real_file + len, m_url, FILENAME_LEN - len - 1 );  //char *strncpy(char *dest, const char *src, int n)，表示把src所指向的字符串中以src地址开始的前n个字节复制到dest所指的数组中，并返回被复制后的dest
+    strncpy( m_real_file + len, m_url, FILENAME_LEN - len - 1 );  
+    //char *strncpy(char *dest, const char *src, int n)，表示把src所指向的字符串中以src地址开始的前n个字节复制到dest所指的数组中，并返回被复制后的dest
     // 获取m_real_file文件的相关的状态信息，-1失败，0成功
+    printf("request file: %s\n", m_real_file);
+    char* temp_board = "/home/ubuntu/webserver/resources/boardview.html";
+    if(strcmp(temp_board, m_real_file) == 0){  //v5.0 查看留言板内容，从数据库中读取需要的资料，写成html文件，返回给用户
+        string filename = "resources/boardview" + to_string(m_sockfd) + ".html";
+        //cout<<filename<<endl;
+        std::ofstream aa(filename.c_str(),ios::out|ios::binary);
+        string write_content = "<html>\n  <head>\n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />\n    <title>留言板</title>\n  </head>\n  <body><br/>\n<br/>\n<div align=\"center\"><font size=\"5\"> <strong>留言板！</strong></font></div>\n<div align=\"center\"></div><p>周华伟： 沙发是我自己的！</p>\n";
+        aa<<write_content;
+        //先从连接池中取一个连接
+        MYSQL *mysql = NULL;
+        connectionRAII mysqlcon(&mysql, connPool);
+        //在user表中检索name，word数据
+        mysql_query(mysql, "set names utf8");  //支持中文
+        if (mysql_query(mysql, "SELECT No, name, word, time FROM board"))
+        {
+            LOG_ERROR("SELECT error:%s\n", mysql_error(mysql));
+        }
+
+        //从表中检索完整的结果集
+        MYSQL_RES *result = mysql_store_result(mysql);
+
+        //返回结果集中的列数
+        int num_fields = mysql_num_fields(result);
+
+        //返回所有字段结构的数组
+        MYSQL_FIELD *fields = mysql_fetch_fields(result);
+
+        //从结果集中获取下一行，将对应的数据
+        while (MYSQL_ROW row = mysql_fetch_row(result))
+        {
+            string number(row[0]);
+            string name(row[1]);
+            string word(row[2]);
+            string time(row[3]);
+            write_content = "<p>" + number + ". " + name + ": " + word + "   留言时间：" + time + "</p>\n";
+            aa<<write_content;
+        }
+        aa<<"</html>";
+        aa.close();
+        string newfile = "/home/ubuntu/webserver/" + filename;
+        //strcpy( m_real_file, filename.c_str());
+        memset(m_real_file, 0, sizeof(m_real_file));
+        memcpy(m_real_file, newfile.data(), newfile.length());
+    }
     if ( stat( m_real_file, &m_file_stat ) < 0 ) {  //通过文件名filename获取文件信息，并保存在buf所指的结构体stat中.执行成功则返回0，失败返回-1，错误代码存于errno
         return NO_RESOURCE;
     }
